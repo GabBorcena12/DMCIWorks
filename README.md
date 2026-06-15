@@ -144,5 +144,5 @@ The current `/docs/index.html` also embeds JSON fallback data so the page can st
 ## Notes
 
 - Property image assets may require permission or authorization for public use.
-- Property prices, availability, promos, images, and construction status should be confirmed before publishing.
-- The site disclaimer is intentionally included because this is an independent real estate agent website, not the official DMCI Homes website unless authorized.
+- Property prices, availability, promos, payment terms, images, and construction status should be confirmed before publishing.
+- The site disclaimer identifies this as an independent real estate marketing website handled by Juan Dela Cruz, not the official DMCI Homes website.
