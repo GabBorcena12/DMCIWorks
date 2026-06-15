@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 138" role="img" aria-labelledby="title">
+  <title id="title">DMCI Homes</title>
+  <rect width="138" height="138" rx="18" fill="#064eb7"/>
+  <path d="M70 12c-26 28-41 62-41 96 0 7 6 13 13 13h56c7 0 13-6 13-13 0-34-15-68-41-96z" fill="none" stroke="#fff" stroke-width="8"/>
+  <path d="M70 18v100M38 112h64" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+</svg>

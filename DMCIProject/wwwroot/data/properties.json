@@ -18,7 +18,7 @@
     "image": "assets/images/properties/Fortis Residences - 01 Main.webp",
     "gallery": ["assets/images/properties/Fortis Residences - 01 Main.webp", "assets/images/properties/Fortis Residences - 02 Drop Off Promenade.webp", "assets/images/properties/Fortis Residences - 03 Leisure Pool.webp"],
     "tags": ["Luxury", "Makati", "Premium"],
-    "inquiry_message": "Hi Gabriel, I would like to inquire about Fortis Residences."
+    "inquiry_message": "Hi Juan, I would like to inquire about Fortis Residences."
   },
   {
     "id": "brio-tower",
@@ -39,7 +39,7 @@
     "image": "assets/images/properties/Brio Tower - 01 Main.webp",
     "gallery": ["assets/images/properties/Brio Tower - 01 Main.webp", "assets/images/properties/Brio Tower - 02 Fitness Gym.webp", "assets/images/properties/Brio Tower - 03 Lap Pool.webp"],
     "tags": ["Makati", "City Living"],
-    "inquiry_message": "Hi Gabriel, I would like to inquire about Brio Tower."
+    "inquiry_message": "Hi Juan, I would like to inquire about Brio Tower."
   },
   {
     "id": "bonifacio-heights-condominiums",
@@ -60,7 +60,7 @@
     "image": "assets/images/properties/Bonifacio Heights Condominiums - 01 Main.webp",
     "gallery": ["assets/images/properties/Bonifacio Heights Condominiums - 01 Main.webp"],
     "tags": ["Affordable", "Near BGC", "Taguig"],
-    "inquiry_message": "Hi Gabriel, I would like to inquire about Bonifacio Heights Condominiums."
+    "inquiry_message": "Hi Juan, I would like to inquire about Bonifacio Heights Condominiums."
   },
   {
     "id": "mulberry-place",
@@ -81,7 +81,7 @@
     "image": "assets/images/properties/Mulberry Place - 01 Main.jpg",
     "gallery": ["assets/images/properties/Mulberry Place - 01 Main.jpg", "assets/images/properties/Mulberry Place - 02 Clubhouse.webp", "assets/images/properties/Mulberry Place - 03 Lap Pool.webp"],
     "tags": ["Taguig", "Luxury", "Family Living"],
-    "inquiry_message": "Hi Gabriel, I would like to inquire about Mulberry Place."
+    "inquiry_message": "Hi Juan, I would like to inquire about Mulberry Place."
   },
   {
     "id": "allegra-garden-place",
@@ -102,7 +102,7 @@
     "image": "assets/images/properties/Allegra Garden Place - 01 Main.jpg",
     "gallery": ["assets/images/properties/Allegra Garden Place - 01 Main.jpg", "assets/images/properties/Allegra Garden Place - 02 Lap Pool.webp", "assets/images/properties/Allegra Garden Place - 03 Sky Lounge.webp"],
     "tags": ["Near BGC", "Pasig", "Investment"],
-    "inquiry_message": "Hi Gabriel, I would like to inquire about Allegra Garden Place."
+    "inquiry_message": "Hi Juan, I would like to inquire about Allegra Garden Place."
   },
   {
     "id": "prisma-residences",
@@ -123,7 +123,7 @@
     "image": "assets/images/properties/Prisma Residences - 01 Main.jpg",
     "gallery": ["assets/images/properties/Prisma Residences - 01 Main.jpg", "assets/images/properties/Prisma Residences - 02 Fitness Gym.jpg", "assets/images/properties/Prisma Residences - 03 Lap Pool.jpg"],
     "tags": ["Pasig", "Near BGC", "Investment"],
-    "inquiry_message": "Hi Gabriel, I would like to inquire about Prisma Residences."
+    "inquiry_message": "Hi Juan, I would like to inquire about Prisma Residences."
   },
   {
     "id": "brixton-place",
@@ -144,7 +144,7 @@
     "image": "assets/images/properties/Brixton Place - 01 Main.webp",
     "gallery": ["assets/images/properties/Brixton Place - 01 Main.webp", "assets/images/properties/Brixton Place - 02 Lap Pool.webp", "assets/images/properties/Brixton Place - 03 Roof Deck.webp"],
     "tags": ["Pasig", "Near BGC", "Near Makati"],
-    "inquiry_message": "Hi Gabriel, I would like to inquire about Brixton Place."
+    "inquiry_message": "Hi Juan, I would like to inquire about Brixton Place."
   },
   {
     "id": "tivoli-garden-residences",
@@ -165,7 +165,7 @@
     "image": "assets/images/properties/Tivoli Garden Residences - 01 Main.webp",
     "gallery": ["assets/images/properties/Tivoli Garden Residences - 01 Main.webp", "assets/images/properties/Tivoli Garden Residences - 02 Leisure Pool.webp", "assets/images/properties/Tivoli Garden Residences - 03 View Deck.webp"],
     "tags": ["Mandaluyong", "Near Makati"],
-    "inquiry_message": "Hi Gabriel, I would like to inquire about Tivoli Garden Residences."
+    "inquiry_message": "Hi Juan, I would like to inquire about Tivoli Garden Residences."
   },
   {
     "id": "kai-garden-residences",
@@ -186,7 +186,7 @@
     "image": "assets/images/properties/Kai Garden Residences - 01 Main.jpg",
     "gallery": ["assets/images/properties/Kai Garden Residences - 01 Main.jpg", "assets/images/properties/Kai Garden Residences - 02 Landscaped Gardens.webp", "assets/images/properties/Kai Garden Residences - 03 Lap Pool.webp"],
     "tags": ["Mandaluyong", "Near Makati", "Premium"],
-    "inquiry_message": "Hi Gabriel, I would like to inquire about Kai Garden Residences."
+    "inquiry_message": "Hi Juan, I would like to inquire about Kai Garden Residences."
   },
   {
     "id": "alder-residences",
@@ -207,6 +207,6 @@
     "image": "assets/images/properties/Alder Residences - 01 Main.jpg",
     "gallery": ["assets/images/properties/Alder Residences - 01 Main.jpg"],
     "tags": ["Taguig", "Near BGC", "Family Living"],
-    "inquiry_message": "Hi Gabriel, I would like to inquire about Alder Residences."
+    "inquiry_message": "Hi Juan, I would like to inquire about Alder Residences."
   }
 ]
