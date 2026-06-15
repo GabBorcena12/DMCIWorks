@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+    "profiles": {
+      "http": {
+        "commandName": "Project",
+        "dotnetRunMessages": true,
+        "launchBrowser": true,
+        "applicationUrl": "http://localhost:5276",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "STATIC_FORMS_ACCESS_KEY": "dummy-staticforms-key",
+          "STATIC_FORMS_RECEIVER_EMAIL": "dummyaccount@gmail.com"
+        }
+      },
+      "https": {
+        "commandName": "Project",
+        "dotnetRunMessages": true,
+        "launchBrowser": true,
+        "applicationUrl": "https://localhost:7201;http://localhost:5276",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "STATIC_FORMS_ACCESS_KEY": "dummy-staticforms-key",
+          "STATIC_FORMS_RECEIVER_EMAIL": "dummyaccount@gmail.com"
+        }
+      }
+    }
+  }

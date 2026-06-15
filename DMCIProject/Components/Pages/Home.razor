@@ -1,0 +1,324 @@
+@page "/"
+
+<PageTitle>DMCI Homes</PageTitle>
+
+<div class="site-shell">
+    <header class="site-header" id="home">
+        <div class="site-header-inner">
+            <a class="brand" href="#home" aria-label="DMCI Homes home">
+                <img class="brand-logo" src="assets/images/logo/dmci-homes-logo.svg" alt="DMCI Homes" />
+            </a>
+
+            <a class="nav-cta" href="#contact">Inquire Now</a>
+        </div>
+    </header>
+
+    <nav class="section-nav" aria-label="Section navigation">
+        <a class="section-nav-link active" href="#home" data-section-link="home"><span>Overview</span></a>
+        <a class="section-nav-link" href="#properties" data-section-link="properties"><span>Properties</span></a>
+        <a class="section-nav-link" href="#news" data-section-link="news"><span>News &amp; Media</span></a>
+        <a class="section-nav-link" href="#site-progress" data-section-link="site-progress"><span>Site Progress</span></a>
+        <a class="section-nav-link" href="#broker" data-section-link="broker"><span>About Agent</span></a>
+        <a class="section-nav-link" href="#contact" data-section-link="contact"><span>Contact</span></a>
+    </nav>
+
+    <main>
+        <section class="hero section-pad">
+            <div class="hero-content">
+                <span class="eyebrow">DMCI Condo Living</span>
+                <h1>Find Your Next DMCI Home</h1>
+                <p>Explore secure, spacious, and well-designed condo communities near prime locations like BGC, Makati, Taguig, Pasig, Mandaluyong, and Metro Manila.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#properties">View Properties</a>
+                    <a class="btn btn-secondary" href="#contact">Ask for Help</a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-label="Modern resort-inspired condominium pool area">
+                <div class="tower tower-a"></div>
+                <div class="tower tower-b"></div>
+                <div class="pool"></div>
+                <div class="palm palm-one"></div>
+                <div class="palm palm-two"></div>
+            </div>
+        </section>
+
+        <section class="trust-strip" aria-label="DMCI Homes property highlights">
+            <span><img src="assets/images/icons/resort-community.svg" alt="" aria-hidden="true" />Resort-Inspired Communities</span>
+            <span><img src="assets/images/icons/secure-development.svg" alt="" aria-hidden="true" />Secure Developments</span>
+            <span><img src="assets/images/icons/strategic-location.svg" alt="" aria-hidden="true" />Strategic Locations</span>
+            <span><img src="assets/images/icons/open-spaces.svg" alt="" aria-hidden="true" />Spacious Open Spaces</span>
+            <span><img src="assets/images/icons/investment-potential.svg" alt="" aria-hidden="true" />High Investment Potential</span>
+        </section>
+
+        <section class="section-pad compact" id="properties">
+            <div class="section-title-row">
+                <div>
+                    <span class="eyebrow">Browse Homes</span>
+                    <h2>Featured Properties</h2>
+                </div>
+                <div class="section-title-actions">
+                    <button class="filter-toggle" id="property-filter-toggle" type="button" aria-expanded="false" aria-controls="property-filter-panel">
+                        <span>Show Filters</span>
+                    </button>
+                    <a href="#contact">Ask for Help</a>
+                </div>
+            </div>
+
+            <div class="filter-panel property-filter-panel" id="property-filter-panel" aria-label="Property filters" hidden>
+                <label class="search-box">
+                    <span>Search by property name</span>
+                    <input id="property-search" type="search" autocomplete="off" />
+                </label>
+                <label>
+                    <span>Location</span>
+                    <select id="location-filter">
+                        <option value="All">All Locations</option>
+                        <option value="Makati">Makati</option>
+                        <option value="Taguig">Taguig</option>
+                        <option value="Pasig">Pasig</option>
+                        <option value="Mandaluyong">Mandaluyong</option>
+                        <option value="Quezon City">Quezon City</option>
+                        <option value="Paranaque">Paranaque</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Price Range</span>
+                    <select id="price-filter">
+                        <option value="Any">Any Price</option>
+                        <option value="under-5m">Under PHP 5M</option>
+                        <option value="5m-10m">PHP 5M - PHP 10M</option>
+                        <option value="10m-20m">PHP 10M - PHP 20M</option>
+                        <option value="20m-above">PHP 20M and above</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Unit Type</span>
+                    <select id="unit-filter">
+                        <option value="Any">Any Unit</option>
+                        <option value="Studio">Studio</option>
+                        <option value="1BR">1BR</option>
+                        <option value="2BR">2BR</option>
+                        <option value="3BR">3BR</option>
+                        <option value="4BR">4BR</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Sort by Price</span>
+                    <select id="sort-filter">
+                        <option value="default">Default</option>
+                        <option value="price-asc">Lowest to Highest</option>
+                        <option value="price-desc">Highest to Lowest</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="property-grid" id="featured-properties" aria-live="polite"></div>
+        </section>
+
+        <section class="section-pad news-section" id="news">
+            <div class="section-title-row">
+                <div>
+                    <span class="eyebrow">Buyer Resources</span>
+                    <h2>News / Updates</h2>
+                </div>
+                <p>Helpful guides for comparing DMCI Homes communities, locations, unit types, and inquiry options.</p>
+            </div>
+            <div class="news-grid" id="news-grid"></div>
+        </section>
+
+        <section class="section-pad progress-section" id="site-progress">
+            <div class="section-title-row">
+                <div>
+                    <span class="eyebrow">Construction Updates</span>
+                    <h2>Site Progress</h2>
+                </div>
+                <p>Track featured community progress and ask for the latest confirmed project details.</p>
+            </div>
+            <div class="progress-grid" id="progress-grid"></div>
+        </section>
+
+        <section class="broker section-pad" id="broker">
+            <div class="broker-photo">
+                <img src="assets/images/broker/broker-portrait.png" alt="Professional real estate agent portrait" />
+            </div>
+            <div>
+                <span class="eyebrow">Real Estate Agent</span>
+                <h2>Juan Dela Cruz</h2>
+                <p>Juan Dela Cruz is a real estate agent helping clients find suitable DMCI Homes properties based on their budget, preferred location, lifestyle needs, and investment goals.</p>
+            </div>
+            <address>
+                <a href="tel:09171234567">0917 123 4567</a>
+                <a href="mailto:juan.delacruz@example.com">juan.delacruz@example.com</a>
+                <a href="https://www.facebook.com/juan.delacruz.realestate" target="_blank" rel="noopener">facebook.com/juan.delacruz.realestate</a>
+            </address>
+        </section>
+
+        <section class="contact section-pad" id="contact">
+            <div>
+                <span class="eyebrow">Inquiry</span>
+                <h2>Find the Right DMCI Property for You</h2>
+                <p>Share your preferred location, budget range, and property goals.</p>
+                <div class="contact-actions">
+                    <a class="contact-card green" href="tel:09171234567">
+                        <strong>Call Now</strong>
+                        <span>0917 123 4567</span>
+                    </a>
+                    <a class="contact-card blue" href="mailto:juan.delacruz@example.com">
+                        <strong>Send Email</strong>
+                        <span>juan.delacruz@example.com</span>
+                    </a>
+                    <a class="contact-card navy" href="https://www.facebook.com/juan.delacruz.realestate" target="_blank" rel="noopener">
+                        <strong>Message on Facebook</strong>
+                        <span>facebook.com/juan.delacruz.realestate</span>
+                    </a>
+                </div>
+            </div>
+            <form class="inquiry-form" novalidate>
+                <label>Full Name<input type="text" name="name" autocomplete="name" required /></label>
+                <label>Email Address<input type="email" name="email" autocomplete="email" required /></label>
+                <label>Phone Number<input type="tel" name="phone" autocomplete="tel" required /></label>
+                <label class="full">Preferred Property<select name="property" id="interested-property" required><option value="">Select property</option></select></label>
+                <label class="full">Budget Range<select name="budget" required><option value="">Select budget range</option><option>Below PHP 5M</option><option>PHP 5M - PHP 10M</option><option>PHP 10M and above</option></select></label>
+                <label class="full">Message<textarea name="message" required></textarea></label>
+                <label class="honeypot-field" aria-hidden="true">Company<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+                <button class="btn btn-primary full" type="submit" data-submit-label="Submit Inquiry">Submit Inquiry</button>
+                <p class="form-success full" id="form-success" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-disclaimer">
+                <h2>Disclaimer</h2>
+                <p>Property details, prices, availability, promos, and images are subject to confirmation. This website is handled by an independent real estate agent and is not the official DMCI Homes website unless authorized.</p>
+            </div>
+            <p class="copyright">&copy; 2026 DMCI Homes. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+<div class="scroll-controls" aria-label="Page scroll controls">
+    <button type="button" data-scroll="top" aria-label="Scroll to top">
+        <img src="assets/images/icons/scroll-top.svg" alt="" aria-hidden="true" />
+    </button>
+    <button type="button" data-scroll="properties" aria-label="Scroll to properties">
+        <img src="assets/images/icons/scroll-properties.svg" alt="" aria-hidden="true" />
+    </button>
+</div>
+
+<div class="modal" id="property-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-panel">
+        <button class="modal-close" type="button" aria-label="Close property details">&times;</button>
+        <div class="modal-gallery">
+            <div class="modal-gallery-info">
+                <span class="eyebrow">Featured Property</span>
+                <h2 id="modal-gallery-title"></h2>
+                <p id="modal-gallery-location"></p>
+                <div class="tag-list" id="modal-gallery-tags"></div>
+            </div>
+            <button class="gallery-btn prev" type="button" aria-label="Previous image">&lsaquo;</button>
+            <img id="modal-image" alt="" />
+            <button class="gallery-btn next" type="button" aria-label="Next image">&rsaquo;</button>
+            <div class="thumbnail-row" id="thumbnail-row"></div>
+        </div>
+        <div class="modal-content">
+            <span class="eyebrow" id="modal-location"></span>
+            <h2 id="modal-title"></h2>
+            <div class="tag-list" id="modal-tags"></div>
+            <dl class="property-facts">
+                <div><dt>Price Range</dt><dd id="modal-price"></dd></div>
+                <div><dt>Unit Types</dt><dd id="modal-units"></dd></div>
+                <div><dt>Turnover</dt><dd id="modal-turnover"></dd></div>
+                <div><dt>Status</dt><dd id="modal-status"></dd></div>
+            </dl>
+            <p id="modal-description"></p>
+            <div class="modal-lists">
+                <section>
+                    <h3>Features</h3>
+                    <ul id="modal-features"></ul>
+                </section>
+                <section>
+                    <h3>Amenities</h3>
+                    <ul id="modal-amenities"></ul>
+                </section>
+            </div>
+            <p class="payment" id="modal-payment"></p>
+            <div class="modal-actions">
+                <a class="btn btn-primary" id="modal-inquire" href="#contact">Inquire Now</a>
+                <a class="btn btn-secondary" id="modal-message" target="_blank" rel="noopener">Message Broker</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal news-modal" id="news-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+    <div class="news-modal-panel">
+        <button class="modal-close news-modal-close" type="button" aria-label="Close news update">&times;</button>
+        <div class="news-modal-media">
+            <img id="news-modal-image" alt="" />
+        </div>
+        <article class="news-modal-content">
+            <div class="card-meta">
+                <span class="tag" id="news-modal-category"></span>
+                <time id="news-modal-date"></time>
+            </div>
+            <h2 id="news-modal-title"></h2>
+            <p id="news-modal-description"></p>
+            <div class="news-modal-note">
+                <strong>Need help comparing options?</strong>
+                <p>Share your preferred location, budget, and unit type so the agent can help you review suitable DMCI Homes communities.</p>
+            </div>
+            <div class="modal-actions">
+                <a class="btn btn-primary" href="#contact" id="news-modal-inquire">Ask for Help</a>
+                <button class="btn btn-secondary news-modal-close" type="button">Close</button>
+            </div>
+        </article>
+    </div>
+</div>
+
+<div class="modal progress-modal" id="progress-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="progress-modal-title">
+    <div class="progress-modal-panel">
+        <button class="modal-close progress-modal-close" type="button" aria-label="Close construction update">&times;</button>
+        <div class="progress-modal-media">
+            <button class="gallery-btn progress-gallery-btn prev" type="button" aria-label="Previous construction image">&lsaquo;</button>
+            <img id="progress-modal-image" alt="" />
+            <button class="gallery-btn progress-gallery-btn next" type="button" aria-label="Next construction image">&rsaquo;</button>
+            <div class="progress-modal-overlay">
+                <span class="tag green">Construction Update</span>
+                <strong id="progress-modal-percent"></strong>
+            </div>
+            <div class="thumbnail-row progress-thumbnail-row" id="progress-thumbnail-row"></div>
+        </div>
+        <article class="progress-modal-content">
+            <div class="card-meta">
+                <span class="tag green" id="progress-modal-status"></span>
+                <time id="progress-modal-date"></time>
+            </div>
+            <h2 id="progress-modal-title"></h2>
+            <p id="progress-modal-location"></p>
+            <div class="progress-modal-track">
+                <span id="progress-modal-bar"></span>
+            </div>
+            <dl class="progress-modal-facts">
+                <div><dt>Current Progress</dt><dd id="progress-modal-fact-progress"></dd></div>
+                <div><dt>Price Range</dt><dd id="progress-modal-price"></dd></div>
+                <div><dt>Unit Types</dt><dd id="progress-modal-units"></dd></div>
+                <div><dt>Turnover</dt><dd id="progress-modal-turnover"></dd></div>
+            </dl>
+            <div class="progress-modal-summary">
+                <strong>Condo Overview</strong>
+                <p id="progress-modal-description"></p>
+            </div>
+            <div class="progress-modal-list">
+                <strong>Highlights</strong>
+                <ul id="progress-modal-highlights"></ul>
+            </div>
+            <div class="modal-actions">
+                <a class="btn btn-primary" href="#contact" id="progress-modal-inquire">Ask for Latest Update</a>
+                <button class="btn btn-secondary progress-modal-close" type="button">Close</button>
+            </div>
+        </article>
+    </div>
+</div>

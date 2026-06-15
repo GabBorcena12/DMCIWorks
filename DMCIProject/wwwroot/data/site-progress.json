@@ -1,0 +1,29 @@
+[
+  {
+    "id": "fortis-progress",
+    "property_name": "Fortis Residences",
+    "location": "Makati City",
+    "progress_percentage": 72,
+    "status": "Progress details available upon request",
+    "last_updated": "2026-06-15",
+    "image": "assets/images/properties/Fortis Residences - 02 Drop Off Promenade.webp"
+  },
+  {
+    "id": "allegra-progress",
+    "property_name": "Allegra Garden Place",
+    "location": "Pasig City",
+    "progress_percentage": 64,
+    "status": "Progress details available upon request",
+    "last_updated": "2026-06-15",
+    "image": "assets/images/properties/Allegra Garden Place - 03 Sky Lounge.webp"
+  },
+  {
+    "id": "alder-progress",
+    "property_name": "Alder Residences",
+    "location": "Taguig City",
+    "progress_percentage": 88,
+    "status": "Progress details available upon request",
+    "last_updated": "2026-06-15",
+    "image": "assets/images/properties/Alder Residences - 01 Main.jpg"
+  }
+]

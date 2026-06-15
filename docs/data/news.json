@@ -1,0 +1,29 @@
+[
+  {
+    "id": "buying-guide",
+    "image": "assets/images/properties/Fortis Residences - 03 Leisure Pool.webp",
+    "category": "Buying Guide",
+    "title": "Questions to Ask Before Choosing a DMCI Condo",
+    "description": "A practical checklist for comparing location, unit type, budget range, turnover, and lifestyle fit.",
+    "date": "2026-06-15",
+    "url": "#contact"
+  },
+  {
+    "id": "investment-guide",
+    "image": "assets/images/properties/Prisma Residences - 03 Lap Pool.jpg",
+    "category": "Investment Guide",
+    "title": "How Investors Compare Condo Options Near Business Districts",
+    "description": "Review rental potential, access to key districts, and long-term value with a licensed broker.",
+    "date": "2026-06-15",
+    "url": "#contact"
+  },
+  {
+    "id": "ofw-checklist",
+    "image": "assets/images/properties/Kai Garden Residences - 02 Landscaped Gardens.webp",
+    "category": "OFW Checklist",
+    "title": "OFW Inquiry Preparation Checklist",
+    "description": "Prepare your preferred location, budget range, unit size, and payment questions before inquiring.",
+    "date": "2026-06-15",
+    "url": "#contact"
+  }
+]

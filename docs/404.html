@@ -1,0 +1,615 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DMCI Homes</title>
+    <base href="./" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<div class="site-shell">
+    <header class="site-header" id="home">
+        <div class="site-header-inner">
+            <a class="brand" href="#home" aria-label="DMCI Homes home">
+                <img class="brand-logo" src="assets/images/logo/dmci-homes-logo.svg" alt="DMCI Homes" />
+            </a>
+
+            <a class="nav-cta" href="#contact">Inquire Now</a>
+        </div>
+    </header>
+
+    <nav class="section-nav" aria-label="Section navigation">
+        <a class="section-nav-link active" href="#home" data-section-link="home"><span>Overview</span></a>
+        <a class="section-nav-link" href="#properties" data-section-link="properties"><span>Properties</span></a>
+        <a class="section-nav-link" href="#news" data-section-link="news"><span>News &amp; Media</span></a>
+        <a class="section-nav-link" href="#site-progress" data-section-link="site-progress"><span>Site Progress</span></a>
+        <a class="section-nav-link" href="#broker" data-section-link="broker"><span>About Agent</span></a>
+        <a class="section-nav-link" href="#contact" data-section-link="contact"><span>Contact</span></a>
+    </nav>
+
+    <main>
+        <section class="hero section-pad">
+            <div class="hero-content">
+                <span class="eyebrow">DMCI Condo Living</span>
+                <h1>Find Your Next DMCI Home</h1>
+                <p>Explore secure, spacious, and well-designed condo communities near prime locations like BGC, Makati, Taguig, Pasig, Mandaluyong, and Metro Manila.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#properties">View Properties</a>
+                    <a class="btn btn-secondary" href="#contact">Ask for Help</a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-label="Modern resort-inspired condominium pool area">
+                <div class="tower tower-a"></div>
+                <div class="tower tower-b"></div>
+                <div class="pool"></div>
+                <div class="palm palm-one"></div>
+                <div class="palm palm-two"></div>
+            </div>
+        </section>
+
+        <section class="trust-strip" aria-label="DMCI Homes property highlights">
+            <span><img src="assets/images/icons/resort-community.svg" alt="" aria-hidden="true" />Resort-Inspired Communities</span>
+            <span><img src="assets/images/icons/secure-development.svg" alt="" aria-hidden="true" />Secure Developments</span>
+            <span><img src="assets/images/icons/strategic-location.svg" alt="" aria-hidden="true" />Strategic Locations</span>
+            <span><img src="assets/images/icons/open-spaces.svg" alt="" aria-hidden="true" />Spacious Open Spaces</span>
+            <span><img src="assets/images/icons/investment-potential.svg" alt="" aria-hidden="true" />High Investment Potential</span>
+        </section>
+
+        <section class="section-pad compact" id="properties">
+            <div class="section-title-row">
+                <div>
+                    <span class="eyebrow">Browse Homes</span>
+                    <h2>Featured Properties</h2>
+                </div>
+                <div class="section-title-actions">
+                    <button class="filter-toggle" id="property-filter-toggle" type="button" aria-expanded="false" aria-controls="property-filter-panel">
+                        <span>Show Filters</span>
+                    </button>
+                    <a href="#contact">Ask for Help</a>
+                </div>
+            </div>
+
+            <div class="filter-panel property-filter-panel" id="property-filter-panel" aria-label="Property filters" hidden>
+                <label class="search-box">
+                    <span>Search by property name</span>
+                    <input id="property-search" type="search" autocomplete="off" />
+                </label>
+                <label>
+                    <span>Location</span>
+                    <select id="location-filter">
+                        <option value="All">All Locations</option>
+                        <option value="Makati">Makati</option>
+                        <option value="Taguig">Taguig</option>
+                        <option value="Pasig">Pasig</option>
+                        <option value="Mandaluyong">Mandaluyong</option>
+                        <option value="Quezon City">Quezon City</option>
+                        <option value="Paranaque">Paranaque</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Price Range</span>
+                    <select id="price-filter">
+                        <option value="Any">Any Price</option>
+                        <option value="under-5m">Under PHP 5M</option>
+                        <option value="5m-10m">PHP 5M - PHP 10M</option>
+                        <option value="10m-20m">PHP 10M - PHP 20M</option>
+                        <option value="20m-above">PHP 20M and above</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Unit Type</span>
+                    <select id="unit-filter">
+                        <option value="Any">Any Unit</option>
+                        <option value="Studio">Studio</option>
+                        <option value="1BR">1BR</option>
+                        <option value="2BR">2BR</option>
+                        <option value="3BR">3BR</option>
+                        <option value="4BR">4BR</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Sort by Price</span>
+                    <select id="sort-filter">
+                        <option value="default">Default</option>
+                        <option value="price-asc">Lowest to Highest</option>
+                        <option value="price-desc">Highest to Lowest</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="property-grid" id="featured-properties" aria-live="polite"></div>
+        </section>
+
+        <section class="section-pad news-section" id="news">
+            <div class="section-title-row">
+                <div>
+                    <span class="eyebrow">Buyer Resources</span>
+                    <h2>News / Updates</h2>
+                </div>
+                <p>Helpful guides for comparing DMCI Homes communities, locations, unit types, and inquiry options.</p>
+            </div>
+            <div class="news-grid" id="news-grid"></div>
+        </section>
+
+        <section class="section-pad progress-section" id="site-progress">
+            <div class="section-title-row">
+                <div>
+                    <span class="eyebrow">Construction Updates</span>
+                    <h2>Site Progress</h2>
+                </div>
+                <p>Track featured community progress and ask for the latest confirmed project details.</p>
+            </div>
+            <div class="progress-grid" id="progress-grid"></div>
+        </section>
+
+        <section class="broker section-pad" id="broker">
+            <div class="broker-photo">
+                <img src="assets/images/broker/broker-portrait.png" alt="Professional real estate agent portrait" />
+            </div>
+            <div>
+                <span class="eyebrow">Real Estate Agent</span>
+                <h2>Juan Dela Cruz</h2>
+                <p>Juan Dela Cruz is a real estate agent helping clients find suitable DMCI Homes properties based on their budget, preferred location, lifestyle needs, and investment goals.</p>
+            </div>
+            <address>
+                <a href="tel:09171234567">0917 123 4567</a>
+                <a href="mailto:juan.delacruz@example.com">juan.delacruz@example.com</a>
+                <a href="https://www.facebook.com/juan.delacruz.realestate" target="_blank" rel="noopener">facebook.com/juan.delacruz.realestate</a>
+            </address>
+        </section>
+
+        <section class="contact section-pad" id="contact">
+            <div>
+                <span class="eyebrow">Inquiry</span>
+                <h2>Find the Right DMCI Property for You</h2>
+                <p>Share your preferred location, budget range, and property goals.</p>
+                <div class="contact-actions">
+                    <a class="contact-card green" href="tel:09171234567">
+                        <strong>Call Now</strong>
+                        <span>0917 123 4567</span>
+                    </a>
+                    <a class="contact-card blue" href="mailto:juan.delacruz@example.com">
+                        <strong>Send Email</strong>
+                        <span>juan.delacruz@example.com</span>
+                    </a>
+                    <a class="contact-card navy" href="https://www.facebook.com/juan.delacruz.realestate" target="_blank" rel="noopener">
+                        <strong>Message on Facebook</strong>
+                        <span>facebook.com/juan.delacruz.realestate</span>
+                    </a>
+                </div>
+            </div>
+            <form class="inquiry-form" novalidate>
+                <label>Full Name<input type="text" name="name" autocomplete="name" required /></label>
+                <label>Email Address<input type="email" name="email" autocomplete="email" required /></label>
+                <label>Phone Number<input type="tel" name="phone" autocomplete="tel" required /></label>
+                <label class="full">Preferred Property<select name="property" id="interested-property" required><option value="">Select property</option></select></label>
+                <label class="full">Budget Range<select name="budget" required><option value="">Select budget range</option><option>Below PHP 5M</option><option>PHP 5M - PHP 10M</option><option>PHP 10M and above</option></select></label>
+                <label class="full">Message<textarea name="message" required></textarea></label>
+                <label class="honeypot-field" aria-hidden="true">Company<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+                <button class="btn btn-primary full" type="submit" data-submit-label="Submit Inquiry">Submit Inquiry</button>
+                <p class="form-success full" id="form-success" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-disclaimer">
+                <h2>Disclaimer</h2>
+                <p>Property details, prices, availability, promos, and images are subject to confirmation. This website is handled by an independent real estate agent and is not the official DMCI Homes website unless authorized.</p>
+            </div>
+            <p class="copyright">&copy; 2026 DMCI Homes. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+<div class="scroll-controls" aria-label="Page scroll controls">
+    <button type="button" data-scroll="top" aria-label="Scroll to top">
+        <img src="assets/images/icons/scroll-top.svg" alt="" aria-hidden="true" />
+    </button>
+    <button type="button" data-scroll="properties" aria-label="Scroll to properties">
+        <img src="assets/images/icons/scroll-properties.svg" alt="" aria-hidden="true" />
+    </button>
+</div>
+
+<div class="modal" id="property-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-panel">
+        <button class="modal-close" type="button" aria-label="Close property details">&times;</button>
+        <div class="modal-gallery">
+            <div class="modal-gallery-info">
+                <span class="eyebrow">Featured Property</span>
+                <h2 id="modal-gallery-title"></h2>
+                <p id="modal-gallery-location"></p>
+                <div class="tag-list" id="modal-gallery-tags"></div>
+            </div>
+            <button class="gallery-btn prev" type="button" aria-label="Previous image">&lsaquo;</button>
+            <img id="modal-image" alt="" />
+            <button class="gallery-btn next" type="button" aria-label="Next image">&rsaquo;</button>
+            <div class="thumbnail-row" id="thumbnail-row"></div>
+        </div>
+        <div class="modal-content">
+            <span class="eyebrow" id="modal-location"></span>
+            <h2 id="modal-title"></h2>
+            <div class="tag-list" id="modal-tags"></div>
+            <dl class="property-facts">
+                <div><dt>Price Range</dt><dd id="modal-price"></dd></div>
+                <div><dt>Unit Types</dt><dd id="modal-units"></dd></div>
+                <div><dt>Turnover</dt><dd id="modal-turnover"></dd></div>
+                <div><dt>Status</dt><dd id="modal-status"></dd></div>
+            </dl>
+            <p id="modal-description"></p>
+            <div class="modal-lists">
+                <section>
+                    <h3>Features</h3>
+                    <ul id="modal-features"></ul>
+                </section>
+                <section>
+                    <h3>Amenities</h3>
+                    <ul id="modal-amenities"></ul>
+                </section>
+            </div>
+            <p class="payment" id="modal-payment"></p>
+            <div class="modal-actions">
+                <a class="btn btn-primary" id="modal-inquire" href="#contact">Inquire Now</a>
+                <a class="btn btn-secondary" id="modal-message" target="_blank" rel="noopener">Message Broker</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal news-modal" id="news-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="news-modal-title">
+    <div class="news-modal-panel">
+        <button class="modal-close news-modal-close" type="button" aria-label="Close news update">&times;</button>
+        <div class="news-modal-media">
+            <img id="news-modal-image" alt="" />
+        </div>
+        <article class="news-modal-content">
+            <div class="card-meta">
+                <span class="tag" id="news-modal-category"></span>
+                <time id="news-modal-date"></time>
+            </div>
+            <h2 id="news-modal-title"></h2>
+            <p id="news-modal-description"></p>
+            <div class="news-modal-note">
+                <strong>Need help comparing options?</strong>
+                <p>Share your preferred location, budget, and unit type so the agent can help you review suitable DMCI Homes communities.</p>
+            </div>
+            <div class="modal-actions">
+                <a class="btn btn-primary" href="#contact" id="news-modal-inquire">Ask for Help</a>
+                <button class="btn btn-secondary news-modal-close" type="button">Close</button>
+            </div>
+        </article>
+    </div>
+</div>
+
+<div class="modal progress-modal" id="progress-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="progress-modal-title">
+    <div class="progress-modal-panel">
+        <button class="modal-close progress-modal-close" type="button" aria-label="Close construction update">&times;</button>
+        <div class="progress-modal-media">
+            <button class="gallery-btn progress-gallery-btn prev" type="button" aria-label="Previous construction image">&lsaquo;</button>
+            <img id="progress-modal-image" alt="" />
+            <button class="gallery-btn progress-gallery-btn next" type="button" aria-label="Next construction image">&rsaquo;</button>
+            <div class="progress-modal-overlay">
+                <span class="tag green">Construction Update</span>
+                <strong id="progress-modal-percent"></strong>
+            </div>
+            <div class="thumbnail-row progress-thumbnail-row" id="progress-thumbnail-row"></div>
+        </div>
+        <article class="progress-modal-content">
+            <div class="card-meta">
+                <span class="tag green" id="progress-modal-status"></span>
+                <time id="progress-modal-date"></time>
+            </div>
+            <h2 id="progress-modal-title"></h2>
+            <p id="progress-modal-location"></p>
+            <div class="progress-modal-track">
+                <span id="progress-modal-bar"></span>
+            </div>
+            <dl class="progress-modal-facts">
+                <div><dt>Current Progress</dt><dd id="progress-modal-fact-progress"></dd></div>
+                <div><dt>Price Range</dt><dd id="progress-modal-price"></dd></div>
+                <div><dt>Unit Types</dt><dd id="progress-modal-units"></dd></div>
+                <div><dt>Turnover</dt><dd id="progress-modal-turnover"></dd></div>
+            </dl>
+            <div class="progress-modal-summary">
+                <strong>Condo Overview</strong>
+                <p id="progress-modal-description"></p>
+            </div>
+            <div class="progress-modal-list">
+                <strong>Highlights</strong>
+                <ul id="progress-modal-highlights"></ul>
+            </div>
+            <div class="modal-actions">
+                <a class="btn btn-primary" href="#contact" id="progress-modal-inquire">Ask for Latest Update</a>
+                <button class="btn btn-secondary progress-modal-close" type="button">Close</button>
+            </div>
+        </article>
+    </div>
+</div>
+    <script type="application/json" id="properties-data">[
+  {
+    "id": "fortis-residences",
+    "name": "Fortis Residences",
+    "location": "Makati City",
+    "city": "Makati",
+    "category": ["Luxury", "Near Makati"],
+    "price_range": "PHP 20M and above",
+    "price_min": 20000000,
+    "price_max": 35000000,
+    "unit_types": ["1BR", "2BR", "3BR"],
+    "turnover": "For confirmation",
+    "status": "Subject to confirmation",
+    "description": "A premium DMCI condo option in Makati for buyers who want upscale city living near business, commercial, and lifestyle districts.",
+    "features": ["Premium Makati location", "Modern high-rise living", "Good for end-users and investors", "Near business districts"],
+    "amenities": ["Swimming pool", "Fitness gym", "Function rooms", "Open spaces", "Security"],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Fortis Residences - 01 Main.webp",
+    "gallery": ["assets/images/properties/Fortis Residences - 01 Main.webp", "assets/images/properties/Fortis Residences - 02 Drop Off Promenade.webp", "assets/images/properties/Fortis Residences - 03 Leisure Pool.webp"],
+    "tags": ["Luxury", "Makati", "Premium"],
+    "inquiry_message": "Hi Gabriel, I would like to inquire about Fortis Residences."
+  },
+  {
+    "id": "brio-tower",
+    "name": "Brio Tower",
+    "location": "Makati City",
+    "city": "Makati",
+    "category": ["Near Makati"],
+    "price_range": "PHP 10M - PHP 20M",
+    "price_min": 10000000,
+    "price_max": 18000000,
+    "unit_types": ["1BR", "2BR", "3BR"],
+    "turnover": "For confirmation",
+    "status": "Subject to confirmation",
+    "description": "A Makati condo option for buyers looking for city access, practical unit options, and DMCI-style residential living.",
+    "features": ["Makati location", "City access", "Multiple unit options", "Good for professionals and families"],
+    "amenities": ["Swimming pool", "Fitness area", "Function room", "Security"],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Brio Tower - 01 Main.webp",
+    "gallery": ["assets/images/properties/Brio Tower - 01 Main.webp", "assets/images/properties/Brio Tower - 02 Fitness Gym.webp", "assets/images/properties/Brio Tower - 03 Lap Pool.webp"],
+    "tags": ["Makati", "City Living"],
+    "inquiry_message": "Hi Gabriel, I would like to inquire about Brio Tower."
+  },
+  {
+    "id": "bonifacio-heights-condominiums",
+    "name": "Bonifacio Heights Condominiums",
+    "location": "Fort Bonifacio, Taguig City",
+    "city": "Taguig",
+    "category": ["Affordable", "Near BGC"],
+    "price_range": "Under PHP 5M",
+    "price_min": 2500000,
+    "price_max": 4900000,
+    "unit_types": ["Studio", "2BR", "3BR"],
+    "turnover": "For confirmation",
+    "status": "Subject to confirmation",
+    "description": "A Taguig condo option near BGC, suited for buyers who want a strategic location with practical value.",
+    "features": ["Near Bonifacio Global City", "Practical location", "Good for starting buyers", "Security-focused community"],
+    "amenities": ["Open spaces", "Community facilities", "Security", "Leisure areas"],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Bonifacio Heights Condominiums - 01 Main.webp",
+    "gallery": ["assets/images/properties/Bonifacio Heights Condominiums - 01 Main.webp"],
+    "tags": ["Affordable", "Near BGC", "Taguig"],
+    "inquiry_message": "Hi Gabriel, I would like to inquire about Bonifacio Heights Condominiums."
+  },
+  {
+    "id": "mulberry-place",
+    "name": "Mulberry Place",
+    "location": "Acacia Estates, Taguig City",
+    "city": "Taguig",
+    "category": ["Luxury", "Near BGC"],
+    "price_range": "PHP 10M - PHP 20M",
+    "price_min": 11000000,
+    "price_max": 19000000,
+    "unit_types": ["2BR", "3BR", "4BR"],
+    "turnover": "For confirmation",
+    "status": "Subject to confirmation",
+    "description": "A residential community in Acacia Estates, Taguig for buyers who value space, privacy, and family-friendly condo living.",
+    "features": ["Acacia Estates location", "Spacious unit options", "Family-friendly community", "Good for end-users and investors"],
+    "amenities": ["Open spaces", "Pool area", "Landscaped gardens", "Function areas", "Security"],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Mulberry Place - 01 Main.jpg",
+    "gallery": ["assets/images/properties/Mulberry Place - 01 Main.jpg", "assets/images/properties/Mulberry Place - 02 Clubhouse.webp", "assets/images/properties/Mulberry Place - 03 Lap Pool.webp"],
+    "tags": ["Taguig", "Luxury", "Family Living"],
+    "inquiry_message": "Hi Gabriel, I would like to inquire about Mulberry Place."
+  },
+  {
+    "id": "allegra-garden-place",
+    "name": "Allegra Garden Place",
+    "location": "Pasig City",
+    "city": "Pasig",
+    "category": ["Affordable", "Near BGC"],
+    "price_range": "PHP 5M - PHP 10M",
+    "price_min": 5200000,
+    "price_max": 9800000,
+    "unit_types": ["Studio", "1BR", "2BR", "3BR"],
+    "turnover": "For confirmation",
+    "status": "Subject to confirmation",
+    "description": "A Pasig condo option with access toward BGC and Ortigas, suitable for professionals, families, and investors.",
+    "features": ["Access toward BGC and Ortigas", "Good investment positioning", "Multiple unit options", "Suitable for professionals and families"],
+    "amenities": ["Swimming pool", "Fitness gym", "Roof garden", "Function areas", "Security"],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Allegra Garden Place - 01 Main.jpg",
+    "gallery": ["assets/images/properties/Allegra Garden Place - 01 Main.jpg", "assets/images/properties/Allegra Garden Place - 02 Lap Pool.webp", "assets/images/properties/Allegra Garden Place - 03 Sky Lounge.webp"],
+    "tags": ["Near BGC", "Pasig", "Investment"],
+    "inquiry_message": "Hi Gabriel, I would like to inquire about Allegra Garden Place."
+  },
+  {
+    "id": "prisma-residences",
+    "name": "Prisma Residences",
+    "location": "Pasig City",
+    "city": "Pasig",
+    "category": ["Affordable", "Near BGC"],
+    "price_range": "PHP 5M - PHP 10M",
+    "price_min": 5800000,
+    "price_max": 10000000,
+    "unit_types": ["1BR", "2BR", "3BR"],
+    "turnover": "For confirmation",
+    "status": "Subject to confirmation",
+    "description": "A Pasig residence with convenient access to BGC and Ortigas, suitable for buyers who want a balanced location for work and lifestyle.",
+    "features": ["Access to BGC and Ortigas", "High-rise condominium", "Good rental potential", "Suitable for professionals"],
+    "amenities": ["Swimming pool", "Fitness area", "Open spaces", "Function room", "Security"],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Prisma Residences - 01 Main.jpg",
+    "gallery": ["assets/images/properties/Prisma Residences - 01 Main.jpg", "assets/images/properties/Prisma Residences - 02 Fitness Gym.jpg", "assets/images/properties/Prisma Residences - 03 Lap Pool.jpg"],
+    "tags": ["Pasig", "Near BGC", "Investment"],
+    "inquiry_message": "Hi Gabriel, I would like to inquire about Prisma Residences."
+  },
+  {
+    "id": "brixton-place",
+    "name": "Brixton Place",
+    "location": "Kapitolyo, Pasig City",
+    "city": "Pasig",
+    "category": ["Near BGC", "Near Makati"],
+    "price_range": "PHP 5M - PHP 10M",
+    "price_min": 6200000,
+    "price_max": 10000000,
+    "unit_types": ["1BR", "2BR", "3BR"],
+    "turnover": "For confirmation",
+    "status": "Subject to confirmation",
+    "description": "A vertical residential community in Kapitolyo, Pasig with access to key business districts and lifestyle areas.",
+    "features": ["Pasig location", "Access to BGC, Makati, and Ortigas", "Good city accessibility", "Suitable for investors and end-users"],
+    "amenities": ["Pool area", "Fitness gym", "Lounge spaces", "Function room", "Security"],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Brixton Place - 01 Main.webp",
+    "gallery": ["assets/images/properties/Brixton Place - 01 Main.webp", "assets/images/properties/Brixton Place - 02 Lap Pool.webp", "assets/images/properties/Brixton Place - 03 Roof Deck.webp"],
+    "tags": ["Pasig", "Near BGC", "Near Makati"],
+    "inquiry_message": "Hi Gabriel, I would like to inquire about Brixton Place."
+  },
+  {
+    "id": "tivoli-garden-residences",
+    "name": "Tivoli Garden Residences",
+    "location": "Mandaluyong City",
+    "city": "Mandaluyong",
+    "category": ["Near Makati", "Affordable"],
+    "price_range": "PHP 5M - PHP 10M",
+    "price_min": 5000000,
+    "price_max": 9500000,
+    "unit_types": ["Studio", "1BR", "2BR", "3BR"],
+    "turnover": "For confirmation",
+    "status": "Subject to confirmation",
+    "description": "A Mandaluyong condo option ideal for buyers who want central Metro Manila access and resort-style living.",
+    "features": ["Near Makati access", "Central Metro Manila location", "Resort-inspired environment", "Good for end-users and investors"],
+    "amenities": ["Gardens", "Pool area", "Fitness gym", "Function areas", "Security"],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Tivoli Garden Residences - 01 Main.webp",
+    "gallery": ["assets/images/properties/Tivoli Garden Residences - 01 Main.webp", "assets/images/properties/Tivoli Garden Residences - 02 Leisure Pool.webp", "assets/images/properties/Tivoli Garden Residences - 03 View Deck.webp"],
+    "tags": ["Mandaluyong", "Near Makati"],
+    "inquiry_message": "Hi Gabriel, I would like to inquire about Tivoli Garden Residences."
+  },
+  {
+    "id": "kai-garden-residences",
+    "name": "Kai Garden Residences",
+    "location": "Mandaluyong City",
+    "city": "Mandaluyong",
+    "category": ["Near Makati", "Luxury"],
+    "price_range": "PHP 10M - PHP 20M",
+    "price_min": 10500000,
+    "price_max": 18000000,
+    "unit_types": ["1BR", "2BR", "3BR"],
+    "turnover": "For confirmation",
+    "status": "Subject to confirmation",
+    "description": "A Mandaluyong condo option with a calm residential feel, suitable for buyers looking for comfort, accessibility, and a premium lifestyle.",
+    "features": ["Mandaluyong location", "Accessible to Makati and nearby business areas", "Premium residential feel", "Good for families and professionals"],
+    "amenities": ["Pool area", "Fitness gym", "Open spaces", "Function areas", "Security"],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Kai Garden Residences - 01 Main.jpg",
+    "gallery": ["assets/images/properties/Kai Garden Residences - 01 Main.jpg", "assets/images/properties/Kai Garden Residences - 02 Landscaped Gardens.webp", "assets/images/properties/Kai Garden Residences - 03 Lap Pool.webp"],
+    "tags": ["Mandaluyong", "Near Makati", "Premium"],
+    "inquiry_message": "Hi Gabriel, I would like to inquire about Kai Garden Residences."
+  },
+  {
+    "id": "alder-residences",
+    "name": "Alder Residences",
+    "location": "Taguig City",
+    "city": "Taguig",
+    "category": ["Near BGC", "Luxury"],
+    "price_range": "PHP 10M - PHP 20M",
+    "price_min": 12000000,
+    "price_max": 19000000,
+    "unit_types": ["2BR", "3BR"],
+    "turnover": "For confirmation",
+    "status": "Subject to confirmation",
+    "description": "A Taguig condo option suited for buyers looking for space, comfort, and access to key lifestyle and business areas.",
+    "features": ["Taguig location", "Near BGC access", "Spacious unit options", "Good for families and investors"],
+    "amenities": ["Swimming pool", "Open spaces", "Fitness area", "Function rooms", "Security"],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Alder Residences - 01 Main.jpg",
+    "gallery": ["assets/images/properties/Alder Residences - 01 Main.jpg"],
+    "tags": ["Taguig", "Near BGC", "Family Living"],
+    "inquiry_message": "Hi Gabriel, I would like to inquire about Alder Residences."
+  }
+]
+</script>
+    <script type="application/json" id="news-data">[
+  {
+    "id": "buying-guide",
+    "image": "assets/images/properties/Fortis Residences - 03 Leisure Pool.webp",
+    "category": "Buying Guide",
+    "title": "Questions to Ask Before Choosing a DMCI Condo",
+    "description": "A practical checklist for comparing location, unit type, budget range, turnover, and lifestyle fit.",
+    "date": "2026-06-15",
+    "url": "#contact"
+  },
+  {
+    "id": "investment-guide",
+    "image": "assets/images/properties/Prisma Residences - 03 Lap Pool.jpg",
+    "category": "Investment Guide",
+    "title": "How Investors Compare Condo Options Near Business Districts",
+    "description": "Review rental potential, access to key districts, and long-term value with a licensed broker.",
+    "date": "2026-06-15",
+    "url": "#contact"
+  },
+  {
+    "id": "ofw-checklist",
+    "image": "assets/images/properties/Kai Garden Residences - 02 Landscaped Gardens.webp",
+    "category": "OFW Checklist",
+    "title": "OFW Inquiry Preparation Checklist",
+    "description": "Prepare your preferred location, budget range, unit size, and payment questions before inquiring.",
+    "date": "2026-06-15",
+    "url": "#contact"
+  }
+]
+</script>
+    <script type="application/json" id="site-progress-data">[
+  {
+    "id": "fortis-progress",
+    "property_name": "Fortis Residences",
+    "location": "Makati City",
+    "progress_percentage": 72,
+    "status": "Progress details available upon request",
+    "last_updated": "2026-06-15",
+    "image": "assets/images/properties/Fortis Residences - 02 Drop Off Promenade.webp"
+  },
+  {
+    "id": "allegra-progress",
+    "property_name": "Allegra Garden Place",
+    "location": "Pasig City",
+    "progress_percentage": 64,
+    "status": "Progress details available upon request",
+    "last_updated": "2026-06-15",
+    "image": "assets/images/properties/Allegra Garden Place - 03 Sky Lounge.webp"
+  },
+  {
+    "id": "alder-progress",
+    "property_name": "Alder Residences",
+    "location": "Taguig City",
+    "progress_percentage": 88,
+    "status": "Progress details available upon request",
+    "last_updated": "2026-06-15",
+    "image": "assets/images/properties/Alder Residences - 01 Main.jpg"
+  }
+]
+</script>
+    <script type="application/json" id="inquiry-config-data">{
+  "staticFormsEndpoint": "https://api.staticforms.xyz/submit",
+  "staticFormsAccessKey": "dummy-staticforms-key",
+  "receiverEmail": "gabrielborcena12@gmail.com"
+}
+</script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

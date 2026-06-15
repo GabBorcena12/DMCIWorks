@@ -1,0 +1,98 @@
+[
+  {
+    "property": "Alder Residences",
+    "image": "assets/images/properties/Alder Residences - 01 Main.jpg",
+    "gallery": [
+      "assets/images/properties/Alder Residences - 01 Main.jpg"
+    ],
+    "note": "Downloaded from public DMCI Homes pages; use only if you have permission/authorization."
+  },
+  {
+    "property": "Allegra Garden Place",
+    "image": "assets/images/properties/Allegra Garden Place - 01 Main.jpg",
+    "gallery": [
+      "assets/images/properties/Allegra Garden Place - 01 Main.jpg",
+      "assets/images/properties/Allegra Garden Place - 02 Lap Pool.webp",
+      "assets/images/properties/Allegra Garden Place - 03 Sky Lounge.webp"
+    ],
+    "note": "Downloaded from public DMCI Homes pages; use only if you have permission/authorization."
+  },
+  {
+    "property": "Bonifacio Heights Condominiums",
+    "image": "assets/images/properties/Bonifacio Heights Condominiums - 01 Main.webp",
+    "gallery": [
+      "assets/images/properties/Bonifacio Heights Condominiums - 01 Main.webp"
+    ],
+    "note": "Downloaded from public DMCI Homes pages; use only if you have permission/authorization."
+  },
+  {
+    "property": "Brio Tower",
+    "image": "assets/images/properties/Brio Tower - 01 Main.webp",
+    "gallery": [
+      "assets/images/properties/Brio Tower - 01 Main.webp",
+      "assets/images/properties/Brio Tower - 02 Fitness Gym.webp",
+      "assets/images/properties/Brio Tower - 03 Lap Pool.webp"
+    ],
+    "note": "Downloaded from public DMCI Homes pages; use only if you have permission/authorization."
+  },
+  {
+    "property": "Brixton Place",
+    "image": "assets/images/properties/Brixton Place - 01 Main.webp",
+    "gallery": [
+      "assets/images/properties/Brixton Place - 01 Main.webp",
+      "assets/images/properties/Brixton Place - 02 Lap Pool.webp",
+      "assets/images/properties/Brixton Place - 03 Roof Deck.webp"
+    ],
+    "note": "Downloaded from public DMCI Homes pages; use only if you have permission/authorization."
+  },
+  {
+    "property": "Fortis Residences",
+    "image": "assets/images/properties/Fortis Residences - 01 Main.webp",
+    "gallery": [
+      "assets/images/properties/Fortis Residences - 01 Main.webp",
+      "assets/images/properties/Fortis Residences - 02 Drop Off Promenade.webp",
+      "assets/images/properties/Fortis Residences - 03 Leisure Pool.webp"
+    ],
+    "note": "Downloaded from public DMCI Homes pages; use only if you have permission/authorization."
+  },
+  {
+    "property": "Kai Garden Residences",
+    "image": "assets/images/properties/Kai Garden Residences - 01 Main.jpg",
+    "gallery": [
+      "assets/images/properties/Kai Garden Residences - 01 Main.jpg",
+      "assets/images/properties/Kai Garden Residences - 02 Landscaped Gardens.webp",
+      "assets/images/properties/Kai Garden Residences - 03 Lap Pool.webp"
+    ],
+    "note": "Downloaded from public DMCI Homes pages; use only if you have permission/authorization."
+  },
+  {
+    "property": "Mulberry Place",
+    "image": "assets/images/properties/Mulberry Place - 01 Main.jpg",
+    "gallery": [
+      "assets/images/properties/Mulberry Place - 01 Main.jpg",
+      "assets/images/properties/Mulberry Place - 02 Clubhouse.webp",
+      "assets/images/properties/Mulberry Place - 03 Lap Pool.webp"
+    ],
+    "note": "Downloaded from public DMCI Homes pages; use only if you have permission/authorization."
+  },
+  {
+    "property": "Prisma Residences",
+    "image": "assets/images/properties/Prisma Residences - 01 Main.jpg",
+    "gallery": [
+      "assets/images/properties/Prisma Residences - 01 Main.jpg",
+      "assets/images/properties/Prisma Residences - 02 Fitness Gym.jpg",
+      "assets/images/properties/Prisma Residences - 03 Lap Pool.jpg"
+    ],
+    "note": "Downloaded from public DMCI Homes pages; use only if you have permission/authorization."
+  },
+  {
+    "property": "Tivoli Garden Residences",
+    "image": "assets/images/properties/Tivoli Garden Residences - 01 Main.webp",
+    "gallery": [
+      "assets/images/properties/Tivoli Garden Residences - 01 Main.webp",
+      "assets/images/properties/Tivoli Garden Residences - 02 Leisure Pool.webp",
+      "assets/images/properties/Tivoli Garden Residences - 03 View Deck.webp"
+    ],
+    "note": "Downloaded from public DMCI Homes pages; use only if you have permission/authorization."
+  }
+]
