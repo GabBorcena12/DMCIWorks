@@ -176,14 +176,16 @@
                     </a>
                 </div>
             </div>
-            <form class="inquiry-form" novalidate>
+            <form class="inquiry-form" action="https://api.staticforms.dev/submit" method="post" novalidate>
+                <!-- The real Static Forms API key is injected during GitHub Actions deployment using the STATIC_FORMS_API_KEY repository secret. -->
+                <input type="hidden" name="apiKey" value="__STATIC_FORMS_API_KEY__" />
+                <input type="hidden" name="subject" value="New DMCI Property Inquiry" />
                 <label>Full Name<input type="text" name="name" autocomplete="name" required /></label>
                 <label>Email Address<input type="email" name="email" autocomplete="email" required /></label>
                 <label>Phone Number<input type="tel" name="phone" autocomplete="tel" required /></label>
                 <label class="full">Preferred Property<select name="property" id="interested-property" required><option value="">Select property</option></select></label>
-                <label class="full">Budget Range<select name="budget" required><option value="">Select budget range</option><option>Below PHP 5M</option><option>PHP 5M - PHP 10M</option><option>PHP 10M and above</option></select></label>
                 <label class="full">Message<textarea name="message" required></textarea></label>
-                <label class="honeypot-field" aria-hidden="true">Company<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+                <input type="text" name="honeypot" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <button class="btn btn-primary full" type="submit" data-submit-label="Submit Inquiry">Submit Inquiry</button>
                 <p class="form-success full" id="form-success" role="status" aria-live="polite"></p>
             </form>
@@ -201,6 +203,16 @@
             <p class="copyright">&copy; 2026 Juan Dela Cruz. All rights reserved.</p>
         </div>
     </footer>
+</div>
+
+<div class="modal thank-you-modal" id="thank-you-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="thank-you-title">
+    <div class="thank-you-modal-panel">
+        <button class="modal-close thank-you-modal-close" type="button" aria-label="Close thank you message">&times;</button>
+        <span class="eyebrow">Inquiry Sent</span>
+        <h2 id="thank-you-title">Thank you for your inquiry!</h2>
+        <p>Your message has been sent successfully. The agent will contact you shortly.</p>
+        <button class="btn btn-primary thank-you-modal-close" type="button">Close</button>
+    </div>
 </div>
 
 <div class="scroll-controls" aria-label="Page scroll controls">

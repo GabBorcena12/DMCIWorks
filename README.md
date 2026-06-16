@@ -54,24 +54,34 @@ http://localhost:5276
 
 The inquiry form uses Static Forms because GitHub Pages does not provide a backend server.
 
-Update the public Static Forms values here:
+The form posts to:
 
 ```text
-DMCIProject/wwwroot/config/inquiry-config.json
-docs/config/inquiry-config.json
+https://api.staticforms.dev/submit
 ```
 
-Current dummy config:
+The committed source uses this placeholder only:
 
-```json
-{
-  "staticFormsEndpoint": "https://api.staticforms.xyz/submit",
-  "staticFormsAccessKey": "dummy-staticforms-key",
-  "receiverEmail": "dummyaccount@gmail.com"
-}
+```text
+__STATIC_FORMS_API_KEY__
 ```
 
-Replace `dummy-staticforms-key` with the real Static Forms access key before production use.
+The real API key is injected during GitHub Actions deployment from the `STATIC_FORMS_API_KEY` repository secret. Replace the placeholder only in the temporary deployment artifact, not in committed files.
+
+The hidden `apiKey` input is located here:
+
+```text
+DMCIProject/Components/Pages/Home.razor
+```
+
+The generated GitHub Pages source copy also contains the same placeholder:
+
+```text
+docs/index.html
+docs/404.html
+```
+
+Keep the source file updated first, then regenerate `/docs` so both versions stay aligned. The workflow copies `/docs` into a temporary `./site` folder and injects the real key there before deploying.
 
 Local-only dummy values are also in:
 

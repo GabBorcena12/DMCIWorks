@@ -67,7 +67,7 @@
         if (!inquiryConfigPromise) {
             inquiryConfigPromise = loadJson("config/inquiry-config.json", "inquiry-config-data")
                 .then((config) => {
-                    if (!config.staticFormsEndpoint || !config.staticFormsAccessKey || !config.receiverEmail) {
+                    if (!config.staticFormsEndpoint || !config.apiKey || !config.receiverEmail) {
                         throw new Error("Inquiry config is missing required Static Forms values.");
                     }
                     return config;
@@ -513,6 +513,26 @@
         }
     };
 
+    const openThankYouModal = () => {
+        const modal = $("#thank-you-modal");
+        if (!modal) return;
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("modal-lock");
+    };
+
+    const closeThankYouModal = () => {
+        $("#thank-you-modal")?.classList.remove("is-open");
+        $("#thank-you-modal")?.setAttribute("aria-hidden", "true");
+        if (
+            !$("#property-modal")?.classList.contains("is-open") &&
+            !$("#news-modal")?.classList.contains("is-open") &&
+            !$("#progress-modal")?.classList.contains("is-open")
+        ) {
+            document.body.classList.remove("modal-lock");
+        }
+    };
+
     const renderNews = async () => {
         const container = $("#news-grid");
         if (!container) return;
@@ -682,6 +702,12 @@
         $("#progress-modal")?.addEventListener("click", (event) => {
             if (event.target.id === "progress-modal") closeProgressModal();
         });
+        $$(".thank-you-modal-close").forEach((button) => {
+            button.addEventListener("click", closeThankYouModal);
+        });
+        $("#thank-you-modal")?.addEventListener("click", (event) => {
+            if (event.target.id === "thank-you-modal") closeThankYouModal();
+        });
         $("#property-modal .gallery-btn.prev")?.addEventListener("click", () => setImage(activeImageIndex - 1));
         $("#property-modal .gallery-btn.next")?.addEventListener("click", () => setImage(activeImageIndex + 1));
         $(".progress-gallery-btn.prev")?.addEventListener("click", () => setProgressImage(activeProgressImageIndex - 1));
@@ -691,11 +717,13 @@
             const propertyOpen = $("#property-modal")?.classList.contains("is-open");
             const newsOpen = $("#news-modal")?.classList.contains("is-open");
             const progressOpen = $("#progress-modal")?.classList.contains("is-open");
-            if (!propertyOpen && !newsOpen && !progressOpen) return;
+            const thankYouOpen = $("#thank-you-modal")?.classList.contains("is-open");
+            if (!propertyOpen && !newsOpen && !progressOpen && !thankYouOpen) return;
             if (event.key === "Escape") {
                 closeModal();
                 closeNewsModal();
                 closeProgressModal();
+                closeThankYouModal();
             }
             if (progressOpen && event.key === "ArrowLeft") setProgressImage(activeProgressImageIndex - 1);
             if (progressOpen && event.key === "ArrowRight") setProgressImage(activeProgressImageIndex + 1);
@@ -712,6 +740,7 @@
             const submitButton = form.querySelector("button[type='submit']");
             const submitLabel = submitButton?.dataset.submitLabel || "Submit Inquiry";
 
+            if (form.dataset.submitting === "true") return;
             setFormStatus(success, "", "");
 
             if (!form.checkValidity()) {
@@ -719,12 +748,12 @@
                 return;
             }
 
-            if (String(formData.get("company") || "").trim()) {
-                setFormStatus(success, "success", "Thank you. Your inquiry has been received.");
+            if (String(formData.get("honeypot") || "").trim()) {
                 form.reset();
                 return;
             }
 
+            form.dataset.submitting = "true";
             if (submitButton) {
                 submitButton.disabled = true;
                 submitButton.textContent = "Sending...";
@@ -732,40 +761,23 @@
             form.classList.add("is-submitting");
 
             try {
-                const config = await loadInquiryConfig();
-                const name = String(formData.get("name") || "").trim();
-                const email = String(formData.get("email") || "").trim();
-                const phone = String(formData.get("phone") || "").trim();
                 const property = String(formData.get("property") || "").trim();
-                const budget = String(formData.get("budget") || "").trim();
                 const message = String(formData.get("message") || "").trim();
+                const phone = String(formData.get("phone") || "").trim();
 
-                const payload = {
-                    accessKey: config.staticFormsAccessKey,
-                    name,
-                    email,
-                    phone,
-                    subject: property ? `DMCI Homes Inquiry - ${property}` : "DMCI Homes Property Inquiry",
-                    message: [
-                        `Preferred Property: ${property}`,
-                        `Budget Range: ${budget}`,
-                        `Phone Number: ${phone}`,
-                        "",
-                        message
-                    ].join("\n"),
-                    replyTo: email,
-                    receiverEmail: config.receiverEmail,
-                    to: config.receiverEmail,
-                    honeypot: ""
-                };
+                formData.set("message", [
+                    `Interested Property: ${property}`,
+                    `Phone Number: ${phone}`,
+                    "",
+                    message
+                ].join("\n"));
 
-                const response = await fetch(config.staticFormsEndpoint, {
-                    method: "POST",
+                const response = await fetch(form.action, {
+                    method: form.method || "POST",
                     headers: {
-                        "Content-Type": "application/json",
                         "Accept": "application/json"
                     },
-                    body: JSON.stringify(payload)
+                    body: formData
                 });
                 const result = await response.json().catch(() => ({}));
 
@@ -773,17 +785,19 @@
                     throw new Error(result.message || "The inquiry could not be sent.");
                 }
 
-                setFormStatus(success, "success", "Thank you. Your inquiry has been sent successfully.");
                 form.reset();
+                if (submitButton) submitButton.textContent = "Sent";
+                openThankYouModal();
             } catch (error) {
                 console.error(error);
-                setFormStatus(success, "error", "Sorry, your inquiry could not be sent right now. Please try again later.");
-            } finally {
-                form.classList.remove("is-submitting");
+                setFormStatus(success, "error", "Something went wrong. Please try again.");
+                delete form.dataset.submitting;
                 if (submitButton) {
                     submitButton.disabled = false;
                     submitButton.textContent = submitLabel;
                 }
+            } finally {
+                form.classList.remove("is-submitting");
             }
         });
     };

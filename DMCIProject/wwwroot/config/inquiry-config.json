@@ -1,5 +1,5 @@
 {
-  "staticFormsEndpoint": "https://api.staticforms.xyz/submit",
-  "staticFormsAccessKey": "dummy-staticforms-key",
-  "receiverEmail": "gabrielborcena12@gmail.com"
+  "staticFormsEndpoint": "https://api.staticforms.dev/submit",
+  "apiKey": "__STATIC_FORMS_API_KEY__",
+  "receiverEmail": "YOUR_EMAIL@gmail.com"
 }
