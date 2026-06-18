@@ -104,6 +104,14 @@
                     </select>
                 </label>
                 <label>
+                    <span>Selling Status</span>
+                    <select id="selling-status-filter">
+                        <option value="All">All Status</option>
+                        <option value="RFO">RFO</option>
+                        <option value="Preselling">Preselling</option>
+                    </select>
+                </label>
+                <label>
                     <span>Sort by Price</span>
                     <select id="sort-filter">
                         <option value="default">Default</option>
@@ -111,6 +119,9 @@
                         <option value="price-desc">Highest to Lowest</option>
                     </select>
                 </label>
+                <div class="filter-actions">
+                    <button class="clear-filters-btn" id="clear-property-filters" type="button">Clear Filters</button>
+                </div>
             </div>
 
             <div class="property-grid" id="featured-properties" aria-live="polite"></div>
@@ -212,6 +223,7 @@
         <h2 id="thank-you-title">Thank you for your inquiry!</h2>
         <p>Your message has been sent successfully. The agent will contact you shortly.</p>
         <button class="btn btn-primary thank-you-modal-close" type="button">Close</button>
+        <p class="modal-footer-note">Your inquiry will be reviewed and responded to as soon as possible.</p>
     </div>
 </div>
 
@@ -224,31 +236,28 @@
     </button>
 </div>
 
-<div class="modal" id="property-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+<div class="modal" id="property-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-gallery-title">
     <div class="modal-panel">
-        <button class="modal-close" type="button" aria-label="Close property details">&times;</button>
+        <div class="modal-kicker">
+            <span class="eyebrow">Featured Property</span>
+        </div>
         <div class="modal-gallery">
-            <div class="modal-gallery-info">
-                <span class="eyebrow">Featured Property</span>
-                <h2 id="modal-gallery-title"></h2>
-                <p id="modal-gallery-location"></p>
-                <div class="tag-list" id="modal-gallery-tags"></div>
-            </div>
-            <button class="gallery-btn prev" type="button" aria-label="Previous image">&lsaquo;</button>
             <img id="modal-image" alt="" />
-            <button class="gallery-btn next" type="button" aria-label="Next image">&rsaquo;</button>
             <div class="thumbnail-row" id="thumbnail-row"></div>
         </div>
+        <div class="modal-property-heading">
+            <h2 id="modal-gallery-title"></h2>
+            <p id="modal-gallery-location"></p>
+            <div class="tag-list" id="modal-gallery-tags"></div>
+        </div>
         <div class="modal-content">
-            <span class="eyebrow" id="modal-location"></span>
-            <h2 id="modal-title"></h2>
-            <div class="tag-list" id="modal-tags"></div>
             <dl class="property-facts">
                 <div><dt>Price Range</dt><dd id="modal-price"></dd></div>
                 <div><dt>Unit Types</dt><dd id="modal-units"></dd></div>
-                <div><dt>Turnover</dt><dd id="modal-turnover"></dd></div>
-                <div><dt>Status</dt><dd id="modal-status"></dd></div>
+                <div><dt>Selling Status</dt><dd id="modal-status"></dd></div>
+                <div><dt>Turnover Date</dt><dd id="modal-turnover"></dd></div>
             </dl>
+            <p class="turnover-source-note" id="modal-turnover-source"></p>
             <p id="modal-description"></p>
             <div class="modal-lists">
                 <section>
@@ -264,8 +273,12 @@
             <div class="modal-actions">
                 <a class="btn btn-primary" id="modal-inquire" href="#contact">Inquire Now</a>
                 <a class="btn btn-secondary" id="modal-message" target="_blank" rel="noopener">Message Broker</a>
+                <button class="btn btn-secondary modal-close-action" type="button">Close</button>
             </div>
         </div>
+        <footer class="modal-footer">
+            <p class="modal-footer-note">Property details are subject to availability and confirmation.</p>
+        </footer>
     </div>
 </div>
 
@@ -276,10 +289,6 @@
             <img id="news-modal-image" alt="" />
         </div>
         <article class="news-modal-content">
-            <div class="card-meta">
-                <span class="tag" id="news-modal-category"></span>
-                <time id="news-modal-date"></time>
-            </div>
             <h2 id="news-modal-title"></h2>
             <p id="news-modal-description"></p>
             <div class="news-modal-note">
@@ -291,6 +300,9 @@
                 <button class="btn btn-secondary news-modal-close" type="button">Close</button>
             </div>
         </article>
+        <footer class="modal-footer">
+            <p class="modal-footer-note">News and announcements are for general information only and may be updated without prior notice.</p>
+        </footer>
     </div>
 </div>
 
@@ -298,9 +310,7 @@
     <div class="progress-modal-panel">
         <button class="modal-close progress-modal-close" type="button" aria-label="Close construction update">&times;</button>
         <div class="progress-modal-media">
-            <button class="gallery-btn progress-gallery-btn prev" type="button" aria-label="Previous construction image">&lsaquo;</button>
             <img id="progress-modal-image" alt="" />
-            <button class="gallery-btn progress-gallery-btn next" type="button" aria-label="Next construction image">&rsaquo;</button>
             <div class="progress-modal-overlay">
                 <span class="tag green">Construction Update</span>
                 <strong id="progress-modal-percent"></strong>
@@ -308,10 +318,6 @@
             <div class="thumbnail-row progress-thumbnail-row" id="progress-thumbnail-row"></div>
         </div>
         <article class="progress-modal-content">
-            <div class="card-meta">
-                <span class="tag green" id="progress-modal-status"></span>
-                <time id="progress-modal-date"></time>
-            </div>
             <h2 id="progress-modal-title"></h2>
             <p id="progress-modal-location"></p>
             <div class="progress-modal-track">
@@ -336,5 +342,8 @@
                 <button class="btn btn-secondary progress-modal-close" type="button">Close</button>
             </div>
         </article>
+        <footer class="modal-footer">
+            <p class="modal-footer-note">Construction progress details and photos are for reference only and may vary depending on official project updates.</p>
+        </footer>
     </div>
 </div>

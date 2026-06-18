@@ -4,209 +4,4658 @@
     "name": "Fortis Residences",
     "location": "Makati City",
     "city": "Makati",
-    "category": ["Luxury", "Near Makati"],
+    "category": [
+      "Luxury",
+      "Near Makati"
+    ],
     "price_range": "PHP 20M and above",
     "price_min": 20000000,
     "price_max": 35000000,
-    "unit_types": ["1BR", "2BR", "3BR"],
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
     "turnover": "For confirmation",
     "status": "Subject to confirmation",
     "description": "A premium DMCI condo option in Makati for buyers who want upscale city living near business, commercial, and lifestyle districts.",
-    "features": ["Premium Makati location", "Modern high-rise living", "Good for end-users and investors", "Near business districts"],
-    "amenities": ["Swimming pool", "Fitness gym", "Function rooms", "Open spaces", "Security"],
+    "features": [
+      "Premium Makati location",
+      "Modern high-rise living",
+      "Good for end-users and investors",
+      "Near business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
     "payment_terms": "Flexible payment options available upon request",
     "image": "assets/images/properties/Fortis Residences - 01 Main.webp",
-    "gallery": ["assets/images/properties/Fortis Residences - 01 Main.webp", "assets/images/properties/Fortis Residences - 02 Drop Off Promenade.webp", "assets/images/properties/Fortis Residences - 03 Leisure Pool.webp"],
-    "tags": ["Luxury", "Makati", "Premium"],
-    "inquiry_message": "Hi Juan, I would like to inquire about Fortis Residences."
+    "gallery": [
+      "assets/images/properties/Fortis Residences - 01 Main.webp",
+      "assets/images/properties/Fortis Residences - 02 Drop Off Promenade.webp",
+      "assets/images/properties/Fortis Residences - 03 Leisure Pool.webp"
+    ],
+    "tags": [
+      "Luxury",
+      "Makati",
+      "Premium"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Fortis Residences.",
+    "selling_status": "Subject to confirmation",
+    "is_preselling": false,
+    "is_rfo": false,
+    "turnover_date": "For confirmation",
+    "turnover_date_source": ""
   },
   {
     "id": "brio-tower",
     "name": "Brio Tower",
     "location": "Makati City",
     "city": "Makati",
-    "category": ["Near Makati"],
+    "category": [
+      "Near Makati"
+    ],
     "price_range": "PHP 10M - PHP 20M",
     "price_min": 10000000,
     "price_max": 18000000,
-    "unit_types": ["1BR", "2BR", "3BR"],
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
     "turnover": "For confirmation",
     "status": "Subject to confirmation",
     "description": "A Makati condo option for buyers looking for city access, practical unit options, and DMCI-style residential living.",
-    "features": ["Makati location", "City access", "Multiple unit options", "Good for professionals and families"],
-    "amenities": ["Swimming pool", "Fitness area", "Function room", "Security"],
+    "features": [
+      "Makati location",
+      "City access",
+      "Multiple unit options",
+      "Good for professionals and families"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness area",
+      "Function room",
+      "Security"
+    ],
     "payment_terms": "Flexible payment options available upon request",
     "image": "assets/images/properties/Brio Tower - 01 Main.webp",
-    "gallery": ["assets/images/properties/Brio Tower - 01 Main.webp", "assets/images/properties/Brio Tower - 02 Fitness Gym.webp", "assets/images/properties/Brio Tower - 03 Lap Pool.webp"],
-    "tags": ["Makati", "City Living"],
-    "inquiry_message": "Hi Juan, I would like to inquire about Brio Tower."
+    "gallery": [
+      "assets/images/properties/Brio Tower - 01 Main.webp",
+      "assets/images/properties/Brio Tower - 02 Fitness Gym.webp",
+      "assets/images/properties/Brio Tower - 03 Lap Pool.webp"
+    ],
+    "tags": [
+      "Makati",
+      "City Living"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Brio Tower.",
+    "selling_status": "Subject to confirmation",
+    "is_preselling": false,
+    "is_rfo": false,
+    "turnover_date": "For confirmation",
+    "turnover_date_source": ""
   },
   {
     "id": "bonifacio-heights-condominiums",
     "name": "Bonifacio Heights Condominiums",
     "location": "Fort Bonifacio, Taguig City",
     "city": "Taguig",
-    "category": ["Affordable", "Near BGC"],
+    "category": [
+      "Affordable",
+      "Near BGC"
+    ],
     "price_range": "Under PHP 5M",
     "price_min": 2500000,
     "price_max": 4900000,
-    "unit_types": ["Studio", "2BR", "3BR"],
+    "unit_types": [
+      "Studio",
+      "2BR",
+      "3BR"
+    ],
     "turnover": "For confirmation",
     "status": "Subject to confirmation",
     "description": "A Taguig condo option near BGC, suited for buyers who want a strategic location with practical value.",
-    "features": ["Near Bonifacio Global City", "Practical location", "Good for starting buyers", "Security-focused community"],
-    "amenities": ["Open spaces", "Community facilities", "Security", "Leisure areas"],
+    "features": [
+      "Near Bonifacio Global City",
+      "Practical location",
+      "Good for starting buyers",
+      "Security-focused community"
+    ],
+    "amenities": [
+      "Open spaces",
+      "Community facilities",
+      "Security",
+      "Leisure areas"
+    ],
     "payment_terms": "Flexible payment options available upon request",
     "image": "assets/images/properties/Bonifacio Heights Condominiums - 01 Main.webp",
-    "gallery": ["assets/images/properties/Bonifacio Heights Condominiums - 01 Main.webp"],
-    "tags": ["Affordable", "Near BGC", "Taguig"],
-    "inquiry_message": "Hi Juan, I would like to inquire about Bonifacio Heights Condominiums."
+    "gallery": [
+      "assets/images/properties/Bonifacio Heights Condominiums - 01 Main.webp"
+    ],
+    "tags": [
+      "Affordable",
+      "Near BGC",
+      "Taguig"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Bonifacio Heights Condominiums.",
+    "selling_status": "Subject to confirmation",
+    "is_preselling": false,
+    "is_rfo": false,
+    "turnover_date": "For confirmation",
+    "turnover_date_source": ""
   },
   {
     "id": "mulberry-place",
     "name": "Mulberry Place",
     "location": "Acacia Estates, Taguig City",
     "city": "Taguig",
-    "category": ["Luxury", "Near BGC"],
+    "category": [
+      "Luxury",
+      "Near BGC"
+    ],
     "price_range": "PHP 10M - PHP 20M",
     "price_min": 11000000,
     "price_max": 19000000,
-    "unit_types": ["2BR", "3BR", "4BR"],
+    "unit_types": [
+      "2BR",
+      "3BR",
+      "4BR"
+    ],
     "turnover": "For confirmation",
     "status": "Subject to confirmation",
     "description": "A residential community in Acacia Estates, Taguig for buyers who value space, privacy, and family-friendly condo living.",
-    "features": ["Acacia Estates location", "Spacious unit options", "Family-friendly community", "Good for end-users and investors"],
-    "amenities": ["Open spaces", "Pool area", "Landscaped gardens", "Function areas", "Security"],
+    "features": [
+      "Acacia Estates location",
+      "Spacious unit options",
+      "Family-friendly community",
+      "Good for end-users and investors"
+    ],
+    "amenities": [
+      "Open spaces",
+      "Pool area",
+      "Landscaped gardens",
+      "Function areas",
+      "Security"
+    ],
     "payment_terms": "Flexible payment options available upon request",
     "image": "assets/images/properties/Mulberry Place - 01 Main.jpg",
-    "gallery": ["assets/images/properties/Mulberry Place - 01 Main.jpg", "assets/images/properties/Mulberry Place - 02 Clubhouse.webp", "assets/images/properties/Mulberry Place - 03 Lap Pool.webp"],
-    "tags": ["Taguig", "Luxury", "Family Living"],
-    "inquiry_message": "Hi Juan, I would like to inquire about Mulberry Place."
+    "gallery": [
+      "assets/images/properties/Mulberry Place - 01 Main.jpg",
+      "assets/images/properties/Mulberry Place - 02 Clubhouse.webp",
+      "assets/images/properties/Mulberry Place - 03 Lap Pool.webp"
+    ],
+    "tags": [
+      "Taguig",
+      "Luxury",
+      "Family Living"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Mulberry Place.",
+    "selling_status": "Subject to confirmation",
+    "is_preselling": false,
+    "is_rfo": false,
+    "turnover_date": "For confirmation",
+    "turnover_date_source": ""
   },
   {
     "id": "allegra-garden-place",
     "name": "Allegra Garden Place",
     "location": "Pasig City",
     "city": "Pasig",
-    "category": ["Affordable", "Near BGC"],
+    "category": [
+      "Affordable",
+      "Near BGC"
+    ],
     "price_range": "PHP 5M - PHP 10M",
     "price_min": 5200000,
     "price_max": 9800000,
-    "unit_types": ["Studio", "1BR", "2BR", "3BR"],
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
     "turnover": "For confirmation",
     "status": "Subject to confirmation",
     "description": "A Pasig condo option with access toward BGC and Ortigas, suitable for professionals, families, and investors.",
-    "features": ["Access toward BGC and Ortigas", "Good investment positioning", "Multiple unit options", "Suitable for professionals and families"],
-    "amenities": ["Swimming pool", "Fitness gym", "Roof garden", "Function areas", "Security"],
+    "features": [
+      "Access toward BGC and Ortigas",
+      "Good investment positioning",
+      "Multiple unit options",
+      "Suitable for professionals and families"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Roof garden",
+      "Function areas",
+      "Security"
+    ],
     "payment_terms": "Flexible payment options available upon request",
     "image": "assets/images/properties/Allegra Garden Place - 01 Main.jpg",
-    "gallery": ["assets/images/properties/Allegra Garden Place - 01 Main.jpg", "assets/images/properties/Allegra Garden Place - 02 Lap Pool.webp", "assets/images/properties/Allegra Garden Place - 03 Sky Lounge.webp"],
-    "tags": ["Near BGC", "Pasig", "Investment"],
-    "inquiry_message": "Hi Juan, I would like to inquire about Allegra Garden Place."
+    "gallery": [
+      "assets/images/properties/Allegra Garden Place - 01 Main.jpg",
+      "assets/images/properties/Allegra Garden Place - 02 Lap Pool.webp",
+      "assets/images/properties/Allegra Garden Place - 03 Sky Lounge.webp"
+    ],
+    "tags": [
+      "Near BGC",
+      "Pasig",
+      "Investment"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Allegra Garden Place.",
+    "selling_status": "Subject to confirmation",
+    "is_preselling": false,
+    "is_rfo": false,
+    "turnover_date": "For confirmation",
+    "turnover_date_source": ""
   },
   {
     "id": "prisma-residences",
     "name": "Prisma Residences",
     "location": "Pasig City",
     "city": "Pasig",
-    "category": ["Affordable", "Near BGC"],
+    "category": [
+      "Affordable",
+      "Near BGC"
+    ],
     "price_range": "PHP 5M - PHP 10M",
     "price_min": 5800000,
     "price_max": 10000000,
-    "unit_types": ["1BR", "2BR", "3BR"],
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
     "turnover": "For confirmation",
     "status": "Subject to confirmation",
     "description": "A Pasig residence with convenient access to BGC and Ortigas, suitable for buyers who want a balanced location for work and lifestyle.",
-    "features": ["Access to BGC and Ortigas", "High-rise condominium", "Good rental potential", "Suitable for professionals"],
-    "amenities": ["Swimming pool", "Fitness area", "Open spaces", "Function room", "Security"],
+    "features": [
+      "Access to BGC and Ortigas",
+      "High-rise condominium",
+      "Good rental potential",
+      "Suitable for professionals"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness area",
+      "Open spaces",
+      "Function room",
+      "Security"
+    ],
     "payment_terms": "Flexible payment options available upon request",
     "image": "assets/images/properties/Prisma Residences - 01 Main.jpg",
-    "gallery": ["assets/images/properties/Prisma Residences - 01 Main.jpg", "assets/images/properties/Prisma Residences - 02 Fitness Gym.jpg", "assets/images/properties/Prisma Residences - 03 Lap Pool.jpg"],
-    "tags": ["Pasig", "Near BGC", "Investment"],
-    "inquiry_message": "Hi Juan, I would like to inquire about Prisma Residences."
+    "gallery": [
+      "assets/images/properties/Prisma Residences - 01 Main.jpg",
+      "assets/images/properties/Prisma Residences - 02 Fitness Gym.jpg",
+      "assets/images/properties/Prisma Residences - 03 Lap Pool.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "Near BGC",
+      "Investment"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Prisma Residences.",
+    "selling_status": "Subject to confirmation",
+    "is_preselling": false,
+    "is_rfo": false,
+    "turnover_date": "For confirmation",
+    "turnover_date_source": ""
   },
   {
     "id": "brixton-place",
     "name": "Brixton Place",
     "location": "Kapitolyo, Pasig City",
     "city": "Pasig",
-    "category": ["Near BGC", "Near Makati"],
+    "category": [
+      "Near BGC",
+      "Near Makati"
+    ],
     "price_range": "PHP 5M - PHP 10M",
     "price_min": 6200000,
     "price_max": 10000000,
-    "unit_types": ["1BR", "2BR", "3BR"],
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
     "turnover": "For confirmation",
     "status": "Subject to confirmation",
     "description": "A vertical residential community in Kapitolyo, Pasig with access to key business districts and lifestyle areas.",
-    "features": ["Pasig location", "Access to BGC, Makati, and Ortigas", "Good city accessibility", "Suitable for investors and end-users"],
-    "amenities": ["Pool area", "Fitness gym", "Lounge spaces", "Function room", "Security"],
+    "features": [
+      "Pasig location",
+      "Access to BGC, Makati, and Ortigas",
+      "Good city accessibility",
+      "Suitable for investors and end-users"
+    ],
+    "amenities": [
+      "Pool area",
+      "Fitness gym",
+      "Lounge spaces",
+      "Function room",
+      "Security"
+    ],
     "payment_terms": "Flexible payment options available upon request",
     "image": "assets/images/properties/Brixton Place - 01 Main.webp",
-    "gallery": ["assets/images/properties/Brixton Place - 01 Main.webp", "assets/images/properties/Brixton Place - 02 Lap Pool.webp", "assets/images/properties/Brixton Place - 03 Roof Deck.webp"],
-    "tags": ["Pasig", "Near BGC", "Near Makati"],
-    "inquiry_message": "Hi Juan, I would like to inquire about Brixton Place."
+    "gallery": [
+      "assets/images/properties/Brixton Place - 01 Main.webp",
+      "assets/images/properties/Brixton Place - 02 Lap Pool.webp",
+      "assets/images/properties/Brixton Place - 03 Roof Deck.webp"
+    ],
+    "tags": [
+      "Pasig",
+      "Near BGC",
+      "Near Makati"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Brixton Place.",
+    "selling_status": "Subject to confirmation",
+    "is_preselling": false,
+    "is_rfo": false,
+    "turnover_date": "For confirmation",
+    "turnover_date_source": ""
   },
   {
     "id": "tivoli-garden-residences",
     "name": "Tivoli Garden Residences",
     "location": "Mandaluyong City",
     "city": "Mandaluyong",
-    "category": ["Near Makati", "Affordable"],
+    "category": [
+      "Near Makati",
+      "Affordable"
+    ],
     "price_range": "PHP 5M - PHP 10M",
     "price_min": 5000000,
     "price_max": 9500000,
-    "unit_types": ["Studio", "1BR", "2BR", "3BR"],
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
     "turnover": "For confirmation",
     "status": "Subject to confirmation",
     "description": "A Mandaluyong condo option ideal for buyers who want central Metro Manila access and resort-style living.",
-    "features": ["Near Makati access", "Central Metro Manila location", "Resort-inspired environment", "Good for end-users and investors"],
-    "amenities": ["Gardens", "Pool area", "Fitness gym", "Function areas", "Security"],
+    "features": [
+      "Near Makati access",
+      "Central Metro Manila location",
+      "Resort-inspired environment",
+      "Good for end-users and investors"
+    ],
+    "amenities": [
+      "Gardens",
+      "Pool area",
+      "Fitness gym",
+      "Function areas",
+      "Security"
+    ],
     "payment_terms": "Flexible payment options available upon request",
     "image": "assets/images/properties/Tivoli Garden Residences - 01 Main.webp",
-    "gallery": ["assets/images/properties/Tivoli Garden Residences - 01 Main.webp", "assets/images/properties/Tivoli Garden Residences - 02 Leisure Pool.webp", "assets/images/properties/Tivoli Garden Residences - 03 View Deck.webp"],
-    "tags": ["Mandaluyong", "Near Makati"],
-    "inquiry_message": "Hi Juan, I would like to inquire about Tivoli Garden Residences."
+    "gallery": [
+      "assets/images/properties/Tivoli Garden Residences - 01 Main.webp",
+      "assets/images/properties/Tivoli Garden Residences - 02 Leisure Pool.webp",
+      "assets/images/properties/Tivoli Garden Residences - 03 View Deck.webp"
+    ],
+    "tags": [
+      "Mandaluyong",
+      "Near Makati"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Tivoli Garden Residences.",
+    "selling_status": "Subject to confirmation",
+    "is_preselling": false,
+    "is_rfo": false,
+    "turnover_date": "For confirmation",
+    "turnover_date_source": ""
   },
   {
     "id": "kai-garden-residences",
     "name": "Kai Garden Residences",
     "location": "Mandaluyong City",
     "city": "Mandaluyong",
-    "category": ["Near Makati", "Luxury"],
+    "category": [
+      "Near Makati",
+      "Luxury"
+    ],
     "price_range": "PHP 10M - PHP 20M",
     "price_min": 10500000,
     "price_max": 18000000,
-    "unit_types": ["1BR", "2BR", "3BR"],
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
     "turnover": "For confirmation",
     "status": "Subject to confirmation",
     "description": "A Mandaluyong condo option with a calm residential feel, suitable for buyers looking for comfort, accessibility, and a premium lifestyle.",
-    "features": ["Mandaluyong location", "Accessible to Makati and nearby business areas", "Premium residential feel", "Good for families and professionals"],
-    "amenities": ["Pool area", "Fitness gym", "Open spaces", "Function areas", "Security"],
+    "features": [
+      "Mandaluyong location",
+      "Accessible to Makati and nearby business areas",
+      "Premium residential feel",
+      "Good for families and professionals"
+    ],
+    "amenities": [
+      "Pool area",
+      "Fitness gym",
+      "Open spaces",
+      "Function areas",
+      "Security"
+    ],
     "payment_terms": "Flexible payment options available upon request",
     "image": "assets/images/properties/Kai Garden Residences - 01 Main.jpg",
-    "gallery": ["assets/images/properties/Kai Garden Residences - 01 Main.jpg", "assets/images/properties/Kai Garden Residences - 02 Landscaped Gardens.webp", "assets/images/properties/Kai Garden Residences - 03 Lap Pool.webp"],
-    "tags": ["Mandaluyong", "Near Makati", "Premium"],
-    "inquiry_message": "Hi Juan, I would like to inquire about Kai Garden Residences."
+    "gallery": [
+      "assets/images/properties/Kai Garden Residences - 01 Main.jpg",
+      "assets/images/properties/Kai Garden Residences - 02 Landscaped Gardens.webp",
+      "assets/images/properties/Kai Garden Residences - 03 Lap Pool.webp"
+    ],
+    "tags": [
+      "Mandaluyong",
+      "Near Makati",
+      "Premium"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Kai Garden Residences.",
+    "selling_status": "Subject to confirmation",
+    "is_preselling": false,
+    "is_rfo": false,
+    "turnover_date": "For confirmation",
+    "turnover_date_source": ""
   },
   {
     "id": "alder-residences",
     "name": "Alder Residences",
     "location": "Taguig City",
     "city": "Taguig",
-    "category": ["Near BGC", "Luxury"],
+    "category": [
+      "Near BGC",
+      "Luxury"
+    ],
     "price_range": "PHP 10M - PHP 20M",
     "price_min": 12000000,
     "price_max": 19000000,
-    "unit_types": ["2BR", "3BR"],
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
     "turnover": "For confirmation",
     "status": "Subject to confirmation",
     "description": "A Taguig condo option suited for buyers looking for space, comfort, and access to key lifestyle and business areas.",
-    "features": ["Taguig location", "Near BGC access", "Spacious unit options", "Good for families and investors"],
-    "amenities": ["Swimming pool", "Open spaces", "Fitness area", "Function rooms", "Security"],
+    "features": [
+      "Taguig location",
+      "Near BGC access",
+      "Spacious unit options",
+      "Good for families and investors"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Open spaces",
+      "Fitness area",
+      "Function rooms",
+      "Security"
+    ],
     "payment_terms": "Flexible payment options available upon request",
     "image": "assets/images/properties/Alder Residences - 01 Main.jpg",
-    "gallery": ["assets/images/properties/Alder Residences - 01 Main.jpg"],
-    "tags": ["Taguig", "Near BGC", "Family Living"],
-    "inquiry_message": "Hi Juan, I would like to inquire about Alder Residences."
+    "gallery": [
+      "assets/images/properties/Alder Residences - 01 Main.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Near BGC",
+      "Family Living"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Alder Residences.",
+    "selling_status": "Subject to confirmation",
+    "is_preselling": false,
+    "is_rfo": false,
+    "turnover_date": "For confirmation",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "kalea-heights",
+    "name": "Kalea Heights",
+    "location": "Cebu City",
+    "city": "Cebu City",
+    "category": [
+      "Mid Range",
+      "New",
+      "Cebu City"
+    ],
+    "price_range": "PHP 5,613,000 - PHP 13,426,000",
+    "price_min": 5613000,
+    "price_max": 13426000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "New",
+    "status": "New",
+    "description": "Kalea Heights is a DMCI Homes property in Cebu City, offering 1BR, 2BR, 3BR options with a listed price range of PHP 5,613,000 - PHP 13,426,000.",
+    "features": [
+      "Cebu City location",
+      "New property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Kalea_Heights_1.jpg",
+    "gallery": [
+      "assets/images/properties/Kalea_Heights_1.jpg",
+      "assets/images/properties/Kalea_Heights_2.jpg",
+      "assets/images/properties/Kalea_Heights_3.jpg"
+    ],
+    "tags": [
+      "Cebu City",
+      "New",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Kalea Heights.",
+    "source_url": "https://www.dmcihomes.com/kalea-heights",
+    "image_source_url": "https://www.dmcihomes.com/uploads/optimized/Kalea-Heights-header-1731644997067-large-686a1f8a72c32.jpg",
+    "selling_status": "Preselling",
+    "is_preselling": true,
+    "is_rfo": false,
+    "turnover_date": "New",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "one-delta-terraces",
+    "name": "One Delta Terraces",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Luxury",
+      "New",
+      "Quezon City"
+    ],
+    "price_range": "PHP 6,953,000 - PHP 22,147,000",
+    "price_min": 6953000,
+    "price_max": 22147000,
+    "unit_types": [
+      "Studio",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "New",
+    "status": "New",
+    "description": "One Delta Terraces is a DMCI Homes property in Quezon City, offering Studio, 2BR, 3BR options with a listed price range of PHP 6,953,000 - PHP 22,147,000.",
+    "features": [
+      "Quezon City location",
+      "New property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/One_Delta_Terraces_1.jpg",
+    "gallery": [
+      "assets/images/properties/One_Delta_Terraces_1.jpg",
+      "assets/images/properties/One_Delta_Terraces_2.jpg",
+      "assets/images/properties/One_Delta_Terraces_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "New",
+      "Luxury"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about One Delta Terraces.",
+    "source_url": "https://www.dmcihomes.com/one-delta-terraces",
+    "image_source_url": "https://www.dmcihomes.com/uploads/optimized/One-Delta-Terraces-header-1724311910964-large-6867342894c38.png",
+    "selling_status": "Preselling",
+    "is_preselling": true,
+    "is_rfo": false,
+    "turnover_date": "New",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "moncello-crest",
+    "name": "Moncello Crest",
+    "location": "Tuba, Benguet",
+    "city": "Tuba",
+    "category": [
+      "Mid Range",
+      "New",
+      "Tuba"
+    ],
+    "price_range": "PHP 7,950,000 - PHP 18,270,000",
+    "price_min": 7950000,
+    "price_max": 18270000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR"
+    ],
+    "turnover": "New",
+    "status": "New",
+    "description": "Moncello Crest is a DMCI Homes property in Tuba, Benguet, offering Studio, 1BR, 2BR options with a listed price range of PHP 7,950,000 - PHP 18,270,000.",
+    "features": [
+      "Tuba, Benguet location",
+      "New property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Moncello_Crest_1.jpg",
+    "gallery": [
+      "assets/images/properties/Moncello_Crest_1.jpg",
+      "assets/images/properties/Moncello_Crest_2.jpg",
+      "assets/images/properties/Moncello_Crest_3.jpg"
+    ],
+    "tags": [
+      "Tuba",
+      "New",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Moncello Crest.",
+    "source_url": "https://www.dmcihomes.com/moncello-crest",
+    "image_source_url": "https://www.dmcihomes.com/uploads/media/Moncello-Crest-featured-1715159999686-small-66c5474fdba24.jpg",
+    "selling_status": "Preselling",
+    "is_preselling": true,
+    "is_rfo": false,
+    "turnover_date": "New",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "alea-residences",
+    "name": "Alea Residences",
+    "location": "Bacoor",
+    "city": "Bacoor",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Bacoor"
+    ],
+    "price_range": "PHP 6,115,000 - PHP 9,872,000",
+    "price_min": 6115000,
+    "price_max": 9872000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Alea Residences is a DMCI Homes property in Bacoor, offering 2BR, 3BR options with a listed price range of PHP 6,115,000 - PHP 9,872,000.",
+    "features": [
+      "Bacoor location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Alea_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Alea_Residences_1.jpg",
+      "assets/images/properties/Alea_Residences_2.jpg",
+      "assets/images/properties/Alea_Residences_3.jpg"
+    ],
+    "tags": [
+      "Bacoor",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Alea Residences.",
+    "source_url": "https://www.dmcihomes.com/alea-residences",
+    "image_source_url": "https://www.dmcihomes.com/uploads/optimized/Alea%2520Residences-header-1644909943248.webp",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "bristle-ridge",
+    "name": "Bristle Ridge",
+    "location": "Baguio City",
+    "city": "Baguio City",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Baguio City"
+    ],
+    "price_range": "PHP 5,010,000 - PHP 14,008,000",
+    "price_min": 5010000,
+    "price_max": 14008000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Bristle Ridge is a DMCI Homes property in Baguio City, offering 1BR, 2BR, 3BR options with a listed price range of PHP 5,010,000 - PHP 14,008,000.",
+    "features": [
+      "Baguio City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Bristle_Ridge_1.jpg",
+    "gallery": [
+      "assets/images/properties/Bristle_Ridge_1.jpg",
+      "assets/images/properties/Bristle_Ridge_2.jpg",
+      "assets/images/properties/Bristle_Ridge_3.jpg"
+    ],
+    "tags": [
+      "Baguio City",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Bristle Ridge.",
+    "source_url": "https://www.dmcihomes.com/bristle-ridge",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "outlook-ridge-residences",
+    "name": "Outlook Ridge Residences",
+    "location": "Baguio City",
+    "city": "Baguio City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Baguio City"
+    ],
+    "price_range": "PHP 3,746,000 - PHP 11,592,000",
+    "price_min": 3746000,
+    "price_max": 11592000,
+    "unit_types": [
+      "Studio",
+      "2BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Outlook Ridge Residences is a DMCI Homes property in Baguio City, offering Studio, 2BR options with a listed price range of PHP 3,746,000 - PHP 11,592,000.",
+    "features": [
+      "Baguio City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Outlook_Ridge_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Outlook_Ridge_Residences_1.jpg",
+      "assets/images/properties/Outlook_Ridge_Residences_2.jpg",
+      "assets/images/properties/Outlook_Ridge_Residences_3.jpg"
+    ],
+    "tags": [
+      "Baguio City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Outlook Ridge Residences.",
+    "source_url": "https://www.dmcihomes.com/outlook-ridge-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "willow-park-homes",
+    "name": "Willow Park Homes",
+    "location": "Cabuyao, Laguna",
+    "city": "Cabuyao",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Cabuyao"
+    ],
+    "price_range": "PHP 1,544,000 - PHP 9,402,000",
+    "price_min": 1544000,
+    "price_max": 9402000,
+    "unit_types": [
+      "H&L",
+      "Lot"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Willow Park Homes is a DMCI Homes property in Cabuyao, Laguna, offering H&L, Lot options with a listed price range of PHP 1,544,000 - PHP 9,402,000.",
+    "features": [
+      "Cabuyao, Laguna location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "House and lot / subdivision option"
+    ],
+    "amenities": [
+      "Gated community",
+      "Open spaces",
+      "Landscaped areas",
+      "Security",
+      "Community amenities"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Willow_Park_Homes_1.jpg",
+    "gallery": [
+      "assets/images/properties/Willow_Park_Homes_1.jpg",
+      "assets/images/properties/Willow_Park_Homes_2.jpg",
+      "assets/images/properties/Willow_Park_Homes_3.jpg"
+    ],
+    "tags": [
+      "Cabuyao",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Willow Park Homes.",
+    "source_url": "https://www.dmcihomes.com/willow-park-homes",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-calinea-tower",
+    "name": "The Calinea Tower",
+    "location": "Caloocan",
+    "city": "Caloocan",
+    "category": [
+      "Luxury",
+      "Under Construction",
+      "Caloocan"
+    ],
+    "price_range": "PHP 5,379,000 - PHP 24,601,000",
+    "price_min": 5379000,
+    "price_max": 24601000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR",
+      "3BR",
+      "Loft"
+    ],
+    "turnover": "Under Construction",
+    "status": "Under Construction",
+    "description": "The Calinea Tower is a DMCI Homes property in Caloocan, offering Studio, 1BR, 2BR, 3BR, Loft options with a listed price range of PHP 5,379,000 - PHP 24,601,000.",
+    "features": [
+      "Caloocan location",
+      "Under Construction property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Calinea_Tower_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Calinea_Tower_1.jpg",
+      "assets/images/properties/The_Calinea_Tower_2.jpg",
+      "assets/images/properties/The_Calinea_Tower_3.jpg"
+    ],
+    "tags": [
+      "Caloocan",
+      "Under Construction",
+      "Luxury"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Calinea Tower.",
+    "source_url": "https://www.dmcihomes.com/the-calinea-tower",
+    "selling_status": "Preselling",
+    "is_preselling": true,
+    "is_rfo": false,
+    "turnover_date": "Under Construction",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "villa-alegre-homes",
+    "name": "Villa Alegre Homes",
+    "location": "Carmona",
+    "city": "Carmona",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Carmona"
+    ],
+    "price_range": "PHP 1,495,700 - PHP 9,514,900",
+    "price_min": 1495700,
+    "price_max": 9514900,
+    "unit_types": [
+      "H&L",
+      "Lot"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Villa Alegre Homes is a DMCI Homes property in Carmona, offering H&L, Lot options with a listed price range of PHP 1,495,700 - PHP 9,514,900.",
+    "features": [
+      "Carmona location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "House and lot / subdivision option"
+    ],
+    "amenities": [
+      "Gated community",
+      "Open spaces",
+      "Landscaped areas",
+      "Security",
+      "Community amenities"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Villa_Alegre_Homes_1.jpg",
+    "gallery": [
+      "assets/images/properties/Villa_Alegre_Homes_1.jpg"
+    ],
+    "tags": [
+      "Carmona",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Villa Alegre Homes.",
+    "source_url": "https://www.dmcihomes.com/villa-alegre",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "alta-vista-de-boracay",
+    "name": "Alta Vista de Boracay",
+    "location": "Malay",
+    "city": "Malay",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Malay"
+    ],
+    "price_range": "PHP 5,597,000 - PHP 9,426,000",
+    "price_min": 5597000,
+    "price_max": 9426000,
+    "unit_types": [
+      "Studio",
+      "Loft"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Alta Vista de Boracay is a DMCI Homes property in Malay, offering Studio, Loft options with a listed price range of PHP 5,597,000 - PHP 9,426,000.",
+    "features": [
+      "Malay location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Alta_Vista_de_Boracay_1.jpg",
+    "gallery": [
+      "assets/images/properties/Alta_Vista_de_Boracay_1.jpg",
+      "assets/images/properties/Alta_Vista_de_Boracay_2.jpg",
+      "assets/images/properties/Alta_Vista_de_Boracay_3.jpg"
+    ],
+    "tags": [
+      "Malay",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Alta Vista de Boracay.",
+    "source_url": "https://www.dmcihomes.com/alta-vista-de-boracay",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "dansalan-gardens-condominiums",
+    "name": "Dansalan Gardens Condominiums",
+    "location": "Mandaluyong",
+    "city": "Mandaluyong",
+    "category": [
+      "Luxury",
+      "Ready for Occupancy",
+      "Mandaluyong",
+      "Near Makati"
+    ],
+    "price_range": "PHP 5,555,000 - PHP 20,623,000",
+    "price_min": 5555000,
+    "price_max": 20623000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Dansalan Gardens Condominiums is a DMCI Homes property in Mandaluyong, offering 1BR, 2BR, 3BR options with a listed price range of PHP 5,555,000 - PHP 20,623,000.",
+    "features": [
+      "Mandaluyong location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Central Metro Manila access"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Dansalan_Gardens_Condominiums_1.jpg",
+    "gallery": [
+      "assets/images/properties/Dansalan_Gardens_Condominiums_1.jpg",
+      "assets/images/properties/Dansalan_Gardens_Condominiums_2.jpg",
+      "assets/images/properties/Dansalan_Gardens_Condominiums_3.jpg"
+    ],
+    "tags": [
+      "Mandaluyong",
+      "Ready for Occupancy",
+      "Luxury"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Dansalan Gardens Condominiums.",
+    "source_url": "https://www.dmcihomes.com/dansalan-gardens-condominiums",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "flair-towers",
+    "name": "Flair Towers",
+    "location": "Mandaluyong",
+    "city": "Mandaluyong",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Mandaluyong",
+      "Near Makati"
+    ],
+    "price_range": "PHP 5,435,000 - PHP 14,171,000",
+    "price_min": 5435000,
+    "price_max": 14171000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Flair Towers is a DMCI Homes property in Mandaluyong, offering Studio, 1BR, 2BR, 3BR options with a listed price range of PHP 5,435,000 - PHP 14,171,000.",
+    "features": [
+      "Mandaluyong location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Central Metro Manila access"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Flair_Towers_1.jpg",
+    "gallery": [
+      "assets/images/properties/Flair_Towers_1.jpg",
+      "assets/images/properties/Flair_Towers_2.jpg",
+      "assets/images/properties/Flair_Towers_3.jpg"
+    ],
+    "tags": [
+      "Mandaluyong",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Flair Towers.",
+    "source_url": "https://www.dmcihomes.com/flair-towers",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "sage-residences",
+    "name": "Sage Residences",
+    "location": "Mandaluyong",
+    "city": "Mandaluyong",
+    "category": [
+      "Mid Range",
+      "Under Construction",
+      "Mandaluyong",
+      "Near Makati"
+    ],
+    "price_range": "PHP 6,513,000 - PHP 16,077,000",
+    "price_min": 6513000,
+    "price_max": 16077000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Under Construction",
+    "status": "Under Construction",
+    "description": "Sage Residences is a DMCI Homes property in Mandaluyong, offering Studio, 1BR, 2BR, 3BR options with a listed price range of PHP 6,513,000 - PHP 16,077,000.",
+    "features": [
+      "Mandaluyong location",
+      "Under Construction property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Central Metro Manila access"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Sage_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Sage_Residences_1.jpg",
+      "assets/images/properties/Sage_Residences_2.jpg",
+      "assets/images/properties/Sage_Residences_3.jpg"
+    ],
+    "tags": [
+      "Mandaluyong",
+      "Under Construction",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Sage Residences.",
+    "source_url": "https://www.dmcihomes.com/sage-residences",
+    "selling_status": "Preselling",
+    "is_preselling": true,
+    "is_rfo": false,
+    "turnover_date": "Under Construction",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "illumina-residences-manila",
+    "name": "Illumina Residences Manila",
+    "location": "Manila",
+    "city": "Manila",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Manila"
+    ],
+    "price_range": "PHP 3,476,000 - PHP 10,308,000",
+    "price_min": 3476000,
+    "price_max": 10308000,
+    "unit_types": [
+      "Studio",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Illumina Residences Manila is a DMCI Homes property in Manila, offering Studio, 2BR, 3BR options with a listed price range of PHP 3,476,000 - PHP 10,308,000.",
+    "features": [
+      "Manila location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Central Metro Manila access"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Illumina_Residences_Manila_1.jpg",
+    "gallery": [
+      "assets/images/properties/Illumina_Residences_Manila_1.jpg",
+      "assets/images/properties/Illumina_Residences_Manila_2.jpg",
+      "assets/images/properties/Illumina_Residences_Manila_3.jpg"
+    ],
+    "tags": [
+      "Manila",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Illumina Residences Manila.",
+    "source_url": "https://www.dmcihomes.com/illumina-residences-manila",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "sorrel-residences",
+    "name": "Sorrel Residences",
+    "location": "Manila",
+    "city": "Manila",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Manila"
+    ],
+    "price_range": "PHP 4,376,000 - PHP 8,712,000",
+    "price_min": 4376000,
+    "price_max": 8712000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Sorrel Residences is a DMCI Homes property in Manila, offering Studio, 1BR, 2BR, 3BR options with a listed price range of PHP 4,376,000 - PHP 8,712,000.",
+    "features": [
+      "Manila location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Central Metro Manila access"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Sorrel_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Sorrel_Residences_1.jpg",
+      "assets/images/properties/Sorrel_Residences_2.jpg",
+      "assets/images/properties/Sorrel_Residences_3.jpg"
+    ],
+    "tags": [
+      "Manila",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Sorrel Residences.",
+    "source_url": "https://www.dmcihomes.com/sorrel-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-camden-place",
+    "name": "The Camden Place",
+    "location": "Manila",
+    "city": "Manila",
+    "category": [
+      "Mid Range",
+      "Under Construction",
+      "Manila"
+    ],
+    "price_range": "PHP 5,143,800 - PHP 9,918,800",
+    "price_min": 5143800,
+    "price_max": 9918800,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR"
+    ],
+    "turnover": "Under Construction",
+    "status": "Under Construction",
+    "description": "The Camden Place is a DMCI Homes property in Manila, offering Studio, 1BR, 2BR options with a listed price range of PHP 5,143,800 - PHP 9,918,800.",
+    "features": [
+      "Manila location",
+      "Under Construction property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Central Metro Manila access"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Camden_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Camden_Place_1.jpg",
+      "assets/images/properties/The_Camden_Place_2.jpg",
+      "assets/images/properties/The_Camden_Place_3.jpg"
+    ],
+    "tags": [
+      "Manila",
+      "Under Construction",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Camden Place.",
+    "source_url": "https://www.dmcihomes.com/the-camden-place",
+    "selling_status": "Preselling",
+    "is_preselling": true,
+    "is_rfo": false,
+    "turnover_date": "Under Construction",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "torre-de-manila",
+    "name": "Torre De Manila",
+    "location": "Manila",
+    "city": "Manila",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Manila"
+    ],
+    "price_range": "PHP 6,339,000 - PHP 14,144,000",
+    "price_min": 6339000,
+    "price_max": 14144000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Torre De Manila is a DMCI Homes property in Manila, offering 1BR, 2BR, 3BR options with a listed price range of PHP 6,339,000 - PHP 14,144,000.",
+    "features": [
+      "Manila location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Central Metro Manila access"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Torre_De_Manila_1.jpg",
+    "gallery": [
+      "assets/images/properties/Torre_De_Manila_1.jpg",
+      "assets/images/properties/Torre_De_Manila_2.jpg",
+      "assets/images/properties/Torre_De_Manila_3.jpg"
+    ],
+    "tags": [
+      "Manila",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Torre De Manila.",
+    "source_url": "https://www.dmcihomes.com/torre-de-manila",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "rhapsody-residences",
+    "name": "Rhapsody Residences",
+    "location": "Muntinlupa",
+    "city": "Muntinlupa",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Muntinlupa"
+    ],
+    "price_range": "PHP 4,196,000 - PHP 11,066,000",
+    "price_min": 4196000,
+    "price_max": 11066000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Rhapsody Residences is a DMCI Homes property in Muntinlupa, offering 2BR, 3BR options with a listed price range of PHP 4,196,000 - PHP 11,066,000.",
+    "features": [
+      "Muntinlupa location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Rhapsody_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Rhapsody_Residences_1.jpg",
+      "assets/images/properties/Rhapsody_Residences_2.jpg",
+      "assets/images/properties/Rhapsody_Residences_3.jpg"
+    ],
+    "tags": [
+      "Muntinlupa",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Rhapsody Residences.",
+    "source_url": "https://www.dmcihomes.com/rhapsody-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "arista-place",
+    "name": "Arista Place",
+    "location": "Parañaque",
+    "city": "Parañaque",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Parañaque"
+    ],
+    "price_range": "PHP 5,032,000 - PHP 8,570,000",
+    "price_min": 5032000,
+    "price_max": 8570000,
+    "unit_types": [
+      "2BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Arista Place is a DMCI Homes property in Parañaque, offering 2BR options with a listed price range of PHP 5,032,000 - PHP 8,570,000.",
+    "features": [
+      "Parañaque location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Arista_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/Arista_Place_1.jpg",
+      "assets/images/properties/Arista_Place_2.jpg",
+      "assets/images/properties/Arista_Place_3.jpg"
+    ],
+    "tags": [
+      "Parañaque",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Arista Place.",
+    "source_url": "https://www.dmcihomes.com/arista-place",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "asteria-residences",
+    "name": "Asteria Residences",
+    "location": "Parañaque",
+    "city": "Parañaque",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Parañaque"
+    ],
+    "price_range": "PHP 5,696,000 - PHP 9,736,000",
+    "price_min": 5696000,
+    "price_max": 9736000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Asteria Residences is a DMCI Homes property in Parañaque, offering 2BR, 3BR options with a listed price range of PHP 5,696,000 - PHP 9,736,000.",
+    "features": [
+      "Parañaque location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Asteria_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Asteria_Residences_1.jpg",
+      "assets/images/properties/Asteria_Residences_2.jpg",
+      "assets/images/properties/Asteria_Residences_3.jpg"
+    ],
+    "tags": [
+      "Parañaque",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Asteria Residences.",
+    "source_url": "https://www.dmcihomes.com/asteria-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "calathea-place",
+    "name": "Calathea Place",
+    "location": "Parañaque",
+    "city": "Parañaque",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Parañaque"
+    ],
+    "price_range": "PHP 4,232,000 - PHP 5,527,000",
+    "price_min": 4232000,
+    "price_max": 5527000,
+    "unit_types": [
+      "1BR",
+      "2BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Calathea Place is a DMCI Homes property in Parañaque, offering 1BR, 2BR options with a listed price range of PHP 4,232,000 - PHP 5,527,000.",
+    "features": [
+      "Parañaque location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Calathea_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/Calathea_Place_1.jpg",
+      "assets/images/properties/Calathea_Place_2.jpg",
+      "assets/images/properties/Calathea_Place_3.jpg"
+    ],
+    "tags": [
+      "Parañaque",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Calathea Place.",
+    "source_url": "https://www.dmcihomes.com/calathea-place",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "oak-harbor-residences",
+    "name": "Oak Harbor Residences",
+    "location": "Parañaque",
+    "city": "Parañaque",
+    "category": [
+      "Luxury",
+      "Ready for Occupancy",
+      "Parañaque"
+    ],
+    "price_range": "PHP 12,788,000 - PHP 57,288,000",
+    "price_min": 12788000,
+    "price_max": 57288000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR",
+      "Loft"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Oak Harbor Residences is a DMCI Homes property in Parañaque, offering 1BR, 2BR, 3BR, Loft options with a listed price range of PHP 12,788,000 - PHP 57,288,000.",
+    "features": [
+      "Parañaque location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Oak_Harbor_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Oak_Harbor_Residences_1.jpg",
+      "assets/images/properties/Oak_Harbor_Residences_2.jpg",
+      "assets/images/properties/Oak_Harbor_Residences_3.jpg"
+    ],
+    "tags": [
+      "Parañaque",
+      "Ready for Occupancy",
+      "Luxury"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Oak Harbor Residences.",
+    "source_url": "https://www.dmcihomes.com/oak-harbor-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "palm-grove",
+    "name": "Palm Grove",
+    "location": "Parañaque",
+    "city": "Parañaque",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Parañaque"
+    ],
+    "price_range": "PHP 4,442,000 - PHP 10,948,000",
+    "price_min": 4442000,
+    "price_max": 10948000,
+    "unit_types": [
+      "2BR",
+      "3BR",
+      "H&L"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Palm Grove is a DMCI Homes property in Parañaque, offering 2BR, 3BR, H&L options with a listed price range of PHP 4,442,000 - PHP 10,948,000.",
+    "features": [
+      "Parañaque location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Gated community",
+      "Open spaces",
+      "Landscaped areas",
+      "Security",
+      "Community amenities"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Palm_Grove_1.jpg",
+    "gallery": [
+      "assets/images/properties/Palm_Grove_1.jpg",
+      "assets/images/properties/Palm_Grove_2.jpg",
+      "assets/images/properties/Palm_Grove_3.jpg"
+    ],
+    "tags": [
+      "Parañaque",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Palm Grove.",
+    "source_url": "https://www.dmcihomes.com/palm-grove",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "raya-garden-condominiums",
+    "name": "Raya Garden Condominiums",
+    "location": "Parañaque",
+    "city": "Parañaque",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Parañaque"
+    ],
+    "price_range": "PHP 4,011,000 - PHP 8,880,000",
+    "price_min": 4011000,
+    "price_max": 8880000,
+    "unit_types": [
+      "Studio",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Raya Garden Condominiums is a DMCI Homes property in Parañaque, offering Studio, 2BR, 3BR options with a listed price range of PHP 4,011,000 - PHP 8,880,000.",
+    "features": [
+      "Parañaque location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Raya_Garden_Condominiums_1.jpg",
+    "gallery": [
+      "assets/images/properties/Raya_Garden_Condominiums_1.jpg",
+      "assets/images/properties/Raya_Garden_Condominiums_2.jpg",
+      "assets/images/properties/Raya_Garden_Condominiums_3.jpg"
+    ],
+    "tags": [
+      "Parañaque",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Raya Garden Condominiums.",
+    "source_url": "https://www.dmcihomes.com/raya-garden-condominiums",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "siena-park-residences",
+    "name": "Siena Park Residences",
+    "location": "Parañaque",
+    "city": "Parañaque",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Parañaque"
+    ],
+    "price_range": "PHP 5,156,000 - PHP 8,601,000",
+    "price_min": 5156000,
+    "price_max": 8601000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Siena Park Residences is a DMCI Homes property in Parañaque, offering 2BR, 3BR options with a listed price range of PHP 5,156,000 - PHP 8,601,000.",
+    "features": [
+      "Parañaque location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Siena_Park_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Siena_Park_Residences_1.jpg",
+      "assets/images/properties/Siena_Park_Residences_2.jpg",
+      "assets/images/properties/Siena_Park_Residences_3.jpg"
+    ],
+    "tags": [
+      "Parañaque",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Siena Park Residences.",
+    "source_url": "https://www.dmcihomes.com/siena-park-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-atherton",
+    "name": "The Atherton",
+    "location": "Parañaque",
+    "city": "Parañaque",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Parañaque"
+    ],
+    "price_range": "PHP 4,237,000 - PHP 8,374,000",
+    "price_min": 4237000,
+    "price_max": 8374000,
+    "unit_types": [
+      "1BR",
+      "2BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "The Atherton is a DMCI Homes property in Parañaque, offering 1BR, 2BR options with a listed price range of PHP 4,237,000 - PHP 8,374,000.",
+    "features": [
+      "Parañaque location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Atherton_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Atherton_1.jpg",
+      "assets/images/properties/The_Atherton_2.jpg",
+      "assets/images/properties/The_Atherton_3.jpg"
+    ],
+    "tags": [
+      "Parañaque",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Atherton.",
+    "source_url": "https://www.dmcihomes.com/the-atherton",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "anissa-heights",
+    "name": "Anissa Heights",
+    "location": "Pasay",
+    "city": "Pasay",
+    "category": [
+      "Affordable",
+      "New",
+      "Pasay",
+      "Near Makati"
+    ],
+    "price_range": "PHP 3,098,600 - PHP 3,600,000",
+    "price_min": 3098600,
+    "price_max": 3600000,
+    "unit_types": [
+      "Studio",
+      "1BR"
+    ],
+    "turnover": "New",
+    "status": "New",
+    "description": "Anissa Heights is a DMCI Homes property in Pasay, offering Studio, 1BR options with a listed price range of PHP 3,098,600 - PHP 3,600,000.",
+    "features": [
+      "Pasay location",
+      "New property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Central Metro Manila access"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Anissa_Heights_1.jpg",
+    "gallery": [
+      "assets/images/properties/Anissa_Heights_1.jpg",
+      "assets/images/properties/Anissa_Heights_2.jpg",
+      "assets/images/properties/Anissa_Heights_3.jpg"
+    ],
+    "tags": [
+      "Pasay",
+      "New",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Anissa Heights.",
+    "source_url": "https://www.dmcihomes.com/anissa-heights",
+    "selling_status": "Preselling",
+    "is_preselling": true,
+    "is_rfo": false,
+    "turnover_date": "New",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "fairway-terraces",
+    "name": "Fairway Terraces",
+    "location": "Pasay",
+    "city": "Pasay",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Pasay",
+      "Near Makati"
+    ],
+    "price_range": "PHP 5,417,800 - PHP 12,443,430",
+    "price_min": 5417800,
+    "price_max": 12443430,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Fairway Terraces is a DMCI Homes property in Pasay, offering 1BR, 2BR, 3BR options with a listed price range of PHP 5,417,800 - PHP 12,443,430.",
+    "features": [
+      "Pasay location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Central Metro Manila access"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Fairway_Terraces_1.jpg",
+    "gallery": [
+      "assets/images/properties/Fairway_Terraces_1.jpg",
+      "assets/images/properties/Fairway_Terraces_2.jpg",
+      "assets/images/properties/Fairway_Terraces_3.jpg"
+    ],
+    "tags": [
+      "Pasay",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Fairway Terraces.",
+    "source_url": "https://www.dmcihomes.com/fairway-terraces",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "la-verti-residences",
+    "name": "La Verti Residences",
+    "location": "Pasay",
+    "city": "Pasay",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Pasay",
+      "Near Makati"
+    ],
+    "price_range": "PHP 4,796,000 - PHP 11,508,000",
+    "price_min": 4796000,
+    "price_max": 11508000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "La Verti Residences is a DMCI Homes property in Pasay, offering Studio, 1BR, 2BR, 3BR options with a listed price range of PHP 4,796,000 - PHP 11,508,000.",
+    "features": [
+      "Pasay location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Central Metro Manila access"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/La_Verti_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/La_Verti_Residences_1.jpg",
+      "assets/images/properties/La_Verti_Residences_2.jpg",
+      "assets/images/properties/La_Verti_Residences_3.jpg"
+    ],
+    "tags": [
+      "Pasay",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about La Verti Residences.",
+    "source_url": "https://www.dmcihomes.com/la-verti-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-aston-place",
+    "name": "The Aston Place",
+    "location": "Pasay",
+    "city": "Pasay",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Pasay",
+      "Near Makati"
+    ],
+    "price_range": "PHP 6,391,000 - PHP 14,429,000",
+    "price_min": 6391000,
+    "price_max": 14429000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "The Aston Place is a DMCI Homes property in Pasay, offering 1BR, 2BR, 3BR options with a listed price range of PHP 6,391,000 - PHP 14,429,000.",
+    "features": [
+      "Pasay location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Central Metro Manila access"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Aston_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Aston_Place_1.jpg",
+      "assets/images/properties/The_Aston_Place_2.jpg"
+    ],
+    "tags": [
+      "Pasay",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Aston Place.",
+    "source_url": "https://www.dmcihomes.com/the-aston-place",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "east-ortigas-mansions",
+    "name": "East Ortigas Mansions",
+    "location": "Pasig",
+    "city": "Pasig",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Pasig",
+      "Near Ortigas"
+    ],
+    "price_range": "PHP 4,191,000 - PHP 12,929,000",
+    "price_min": 4191000,
+    "price_max": 12929000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR",
+      "4BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "East Ortigas Mansions is a DMCI Homes property in Pasig, offering 1BR, 2BR, 3BR, 4BR options with a listed price range of PHP 4,191,000 - PHP 12,929,000.",
+    "features": [
+      "Pasig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/East_Ortigas_Mansions_1.jpg",
+    "gallery": [
+      "assets/images/properties/East_Ortigas_Mansions_1.jpg",
+      "assets/images/properties/East_Ortigas_Mansions_2.jpg",
+      "assets/images/properties/East_Ortigas_Mansions_3.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about East Ortigas Mansions.",
+    "source_url": "https://www.dmcihomes.com/east-ortigas-mansions",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "east-raya-gardens",
+    "name": "East Raya Gardens",
+    "location": "Pasig",
+    "city": "Pasig",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Pasig",
+      "Near Ortigas"
+    ],
+    "price_range": "PHP 4,932,000 - PHP 9,341,000",
+    "price_min": 4932000,
+    "price_max": 9341000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "East Raya Gardens is a DMCI Homes property in Pasig, offering 2BR, 3BR options with a listed price range of PHP 4,932,000 - PHP 9,341,000.",
+    "features": [
+      "Pasig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/East_Raya_Gardens_1.jpg",
+    "gallery": [
+      "assets/images/properties/East_Raya_Gardens_1.jpg",
+      "assets/images/properties/East_Raya_Gardens_2.jpg",
+      "assets/images/properties/East_Raya_Gardens_3.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about East Raya Gardens.",
+    "source_url": "https://www.dmcihomes.com/east-raya-gardens",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "fairlane-residences",
+    "name": "Fairlane Residences",
+    "location": "Pasig",
+    "city": "Pasig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Pasig",
+      "Near Ortigas"
+    ],
+    "price_range": "PHP 9,585,000 - PHP 17,280,000",
+    "price_min": 9585000,
+    "price_max": 17280000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Fairlane Residences is a DMCI Homes property in Pasig, offering 2BR, 3BR options with a listed price range of PHP 9,585,000 - PHP 17,280,000.",
+    "features": [
+      "Pasig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Fairlane_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Fairlane_Residences_1.jpg",
+      "assets/images/properties/Fairlane_Residences_2.jpg",
+      "assets/images/properties/Fairlane_Residences_3.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Fairlane Residences.",
+    "source_url": "https://www.dmcihomes.com/fairlane-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "levina-place",
+    "name": "Levina Place",
+    "location": "Pasig",
+    "city": "Pasig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Pasig",
+      "Near Ortigas"
+    ],
+    "price_range": "PHP 5,142,000 - PHP 8,708,000",
+    "price_min": 5142000,
+    "price_max": 8708000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Levina Place is a DMCI Homes property in Pasig, offering 1BR, 2BR, 3BR options with a listed price range of PHP 5,142,000 - PHP 8,708,000.",
+    "features": [
+      "Pasig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Levina_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/Levina_Place_1.jpg",
+      "assets/images/properties/Levina_Place_2.jpg",
+      "assets/images/properties/Levina_Place_3.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Levina Place.",
+    "source_url": "https://www.dmcihomes.com/levina-place",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "lumiere-residences",
+    "name": "Lumiere Residences",
+    "location": "Pasig",
+    "city": "Pasig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Pasig",
+      "Near Ortigas"
+    ],
+    "price_range": "PHP 5,111,000 - PHP 14,266,000",
+    "price_min": 5111000,
+    "price_max": 14266000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Lumiere Residences is a DMCI Homes property in Pasig, offering 1BR, 2BR, 3BR options with a listed price range of PHP 5,111,000 - PHP 14,266,000.",
+    "features": [
+      "Pasig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Lumiere_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Lumiere_Residences_1.jpg",
+      "assets/images/properties/Lumiere_Residences_2.jpg",
+      "assets/images/properties/Lumiere_Residences_3.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Lumiere Residences.",
+    "source_url": "https://www.dmcihomes.com/lumiere-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "mayfield-park-residences",
+    "name": "Mayfield Park Residences",
+    "location": "Pasig",
+    "city": "Pasig",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Pasig",
+      "Near Ortigas"
+    ],
+    "price_range": "PHP 4,177,000 - PHP 6,871,000",
+    "price_min": 4177000,
+    "price_max": 6871000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Mayfield Park Residences is a DMCI Homes property in Pasig, offering 2BR, 3BR options with a listed price range of PHP 4,177,000 - PHP 6,871,000.",
+    "features": [
+      "Pasig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Mayfield_Park_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Mayfield_Park_Residences_1.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Mayfield Park Residences.",
+    "source_url": "https://www.dmcihomes.com/mayfield-park-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "mirea-residences",
+    "name": "Mirea Residences",
+    "location": "Pasig",
+    "city": "Pasig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Pasig",
+      "Near Ortigas"
+    ],
+    "price_range": "PHP 5,950,000 - PHP 9,465,000",
+    "price_min": 5950000,
+    "price_max": 9465000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Mirea Residences is a DMCI Homes property in Pasig, offering 2BR, 3BR options with a listed price range of PHP 5,950,000 - PHP 9,465,000.",
+    "features": [
+      "Pasig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Mirea_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Mirea_Residences_1.jpg",
+      "assets/images/properties/Mirea_Residences_2.jpg",
+      "assets/images/properties/Mirea_Residences_3.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Mirea Residences.",
+    "source_url": "https://www.dmcihomes.com/mirea-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "riverfront-residences",
+    "name": "Riverfront Residences",
+    "location": "Pasig",
+    "city": "Pasig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Pasig",
+      "Near Ortigas"
+    ],
+    "price_range": "PHP 5,104,000 - PHP 9,974,000",
+    "price_min": 5104000,
+    "price_max": 9974000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Riverfront Residences is a DMCI Homes property in Pasig, offering 2BR, 3BR options with a listed price range of PHP 5,104,000 - PHP 9,974,000.",
+    "features": [
+      "Pasig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Riverfront_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Riverfront_Residences_1.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Riverfront Residences.",
+    "source_url": "https://www.dmcihomes.com/riverfront-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "satori-residences",
+    "name": "Satori Residences",
+    "location": "Pasig",
+    "city": "Pasig",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Pasig",
+      "Near Ortigas"
+    ],
+    "price_range": "PHP 4,661,000 - PHP 8,800,000",
+    "price_min": 4661000,
+    "price_max": 8800000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Satori Residences is a DMCI Homes property in Pasig, offering 1BR, 2BR, 3BR options with a listed price range of PHP 4,661,000 - PHP 8,800,000.",
+    "features": [
+      "Pasig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Satori_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Satori_Residences_1.jpg",
+      "assets/images/properties/Satori_Residences_2.jpg",
+      "assets/images/properties/Satori_Residences_3.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Satori Residences.",
+    "source_url": "https://www.dmcihomes.com/satori-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "sheridan-towers",
+    "name": "Sheridan Towers",
+    "location": "Pasig",
+    "city": "Pasig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Pasig",
+      "Near Ortigas"
+    ],
+    "price_range": "PHP 6,083,000 - PHP 12,416,000",
+    "price_min": 6083000,
+    "price_max": 12416000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Sheridan Towers is a DMCI Homes property in Pasig, offering 1BR, 2BR, 3BR options with a listed price range of PHP 6,083,000 - PHP 12,416,000.",
+    "features": [
+      "Pasig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Sheridan_Towers_1.jpg",
+    "gallery": [
+      "assets/images/properties/Sheridan_Towers_1.jpg",
+      "assets/images/properties/Sheridan_Towers_2.jpg",
+      "assets/images/properties/Sheridan_Towers_3.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Sheridan Towers.",
+    "source_url": "https://www.dmcihomes.com/sheridan-towers",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-valeron-tower",
+    "name": "The Valeron Tower",
+    "location": "Pasig",
+    "city": "Pasig",
+    "category": [
+      "Mid Range",
+      "New",
+      "Pasig",
+      "Near Ortigas"
+    ],
+    "price_range": "PHP 6,975,000 - PHP 18,014,000",
+    "price_min": 6975000,
+    "price_max": 18014000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "New",
+    "status": "New",
+    "description": "The Valeron Tower is a DMCI Homes property in Pasig, offering Studio, 1BR, 2BR, 3BR options with a listed price range of PHP 6,975,000 - PHP 18,014,000.",
+    "features": [
+      "Pasig location",
+      "New property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Valeron_Tower_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Valeron_Tower_1.jpg",
+      "assets/images/properties/The_Valeron_Tower_2.jpg",
+      "assets/images/properties/The_Valeron_Tower_3.jpg"
+    ],
+    "tags": [
+      "Pasig",
+      "New",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Valeron Tower.",
+    "source_url": "https://www.dmcihomes.com/the-valeron-tower",
+    "selling_status": "Preselling",
+    "is_preselling": true,
+    "is_rfo": false,
+    "turnover_date": "New",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "accolade-place",
+    "name": "Accolade Place",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 7,293,000 - PHP 14,975,000",
+    "price_min": 7293000,
+    "price_max": 14975000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Accolade Place is a DMCI Homes property in Quezon City, offering 2BR, 3BR options with a listed price range of PHP 7,293,000 - PHP 14,975,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Accolade_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/Accolade_Place_1.jpg",
+      "assets/images/properties/Accolade_Place_2.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Accolade Place.",
+    "source_url": "https://www.dmcihomes.com/accolade-place",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "cameron-residences",
+    "name": "Cameron Residences",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 5,171,000 - PHP 12,603,000",
+    "price_min": 5171000,
+    "price_max": 12603000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Cameron Residences is a DMCI Homes property in Quezon City, offering 1BR, 2BR, 3BR options with a listed price range of PHP 5,171,000 - PHP 12,603,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Cameron_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Cameron_Residences_1.jpg",
+      "assets/images/properties/Cameron_Residences_2.jpg",
+      "assets/images/properties/Cameron_Residences_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Cameron Residences.",
+    "source_url": "https://www.dmcihomes.com/cameron-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "infina-towers",
+    "name": "Infina Towers",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 4,746,000 - PHP 11,042,000",
+    "price_min": 4746000,
+    "price_max": 11042000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Infina Towers is a DMCI Homes property in Quezon City, offering 1BR, 2BR, 3BR options with a listed price range of PHP 4,746,000 - PHP 11,042,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Infina_Towers_1.jpg",
+    "gallery": [
+      "assets/images/properties/Infina_Towers_1.jpg",
+      "assets/images/properties/Infina_Towers_2.jpg",
+      "assets/images/properties/Infina_Towers_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Infina Towers.",
+    "source_url": "https://www.dmcihomes.com/infina-towers",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "magnolia-place",
+    "name": "Magnolia Place",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 4,126,000 - PHP 8,538,000",
+    "price_min": 4126000,
+    "price_max": 8538000,
+    "unit_types": [
+      "Studio",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Magnolia Place is a DMCI Homes property in Quezon City, offering Studio, 2BR, 3BR options with a listed price range of PHP 4,126,000 - PHP 8,538,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Magnolia_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/Magnolia_Place_1.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Magnolia Place.",
+    "source_url": "https://www.dmcihomes.com/magnolia-place",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "one-castilla-place",
+    "name": "One Castilla Place",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 5,140,000 - PHP 12,197,000",
+    "price_min": 5140000,
+    "price_max": 12197000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "One Castilla Place is a DMCI Homes property in Quezon City, offering 1BR, 2BR, 3BR options with a listed price range of PHP 5,140,000 - PHP 12,197,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/One_Castilla_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/One_Castilla_Place_1.jpg",
+      "assets/images/properties/One_Castilla_Place_2.jpg",
+      "assets/images/properties/One_Castilla_Place_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about One Castilla Place.",
+    "source_url": "https://www.dmcihomes.com/one-castilla-place",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "stellar-place",
+    "name": "Stellar Place",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 4,446,000 - PHP 10,823,000",
+    "price_min": 4446000,
+    "price_max": 10823000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Stellar Place is a DMCI Homes property in Quezon City, offering Studio, 1BR, 2BR, 3BR options with a listed price range of PHP 4,446,000 - PHP 10,823,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Stellar_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/Stellar_Place_1.jpg",
+      "assets/images/properties/Stellar_Place_2.jpg",
+      "assets/images/properties/Stellar_Place_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Stellar Place.",
+    "source_url": "https://www.dmcihomes.com/stellar-place",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-amaryllis",
+    "name": "The Amaryllis",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 5,106,000 - PHP 15,547,000",
+    "price_min": 5106000,
+    "price_max": 15547000,
+    "unit_types": [
+      "2BR",
+      "3BR",
+      "4BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "The Amaryllis is a DMCI Homes property in Quezon City, offering 2BR, 3BR, 4BR options with a listed price range of PHP 5,106,000 - PHP 15,547,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Amaryllis_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Amaryllis_1.jpg",
+      "assets/images/properties/The_Amaryllis_2.jpg",
+      "assets/images/properties/The_Amaryllis_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Amaryllis.",
+    "source_url": "https://www.dmcihomes.com/the-amaryllis",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-celandine",
+    "name": "The Celandine",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 4,171,000 - PHP 7,353,000",
+    "price_min": 4171000,
+    "price_max": 7353000,
+    "unit_types": [
+      "1BR",
+      "2BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "The Celandine is a DMCI Homes property in Quezon City, offering 1BR, 2BR options with a listed price range of PHP 4,171,000 - PHP 7,353,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Celandine_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Celandine_1.jpg",
+      "assets/images/properties/The_Celandine_2.jpg",
+      "assets/images/properties/The_Celandine_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Celandine.",
+    "source_url": "https://www.dmcihomes.com/the-celandine",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-crestmont",
+    "name": "The Crestmont",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 6,525,000 - PHP 15,718,000",
+    "price_min": 6525000,
+    "price_max": 15718000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "The Crestmont is a DMCI Homes property in Quezon City, offering 1BR, 2BR, 3BR options with a listed price range of PHP 6,525,000 - PHP 15,718,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Crestmont_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Crestmont_1.jpg",
+      "assets/images/properties/The_Crestmont_2.jpg",
+      "assets/images/properties/The_Crestmont_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Mid Range"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Crestmont.",
+    "source_url": "https://www.dmcihomes.com/the-crestmont",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-erin-heights",
+    "name": "The Erin Heights",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Affordable",
+      "Under Construction",
+      "Quezon City"
+    ],
+    "price_range": "PHP 4,930,000 - PHP 30,140,000",
+    "price_min": 4930000,
+    "price_max": 30140000,
+    "unit_types": [
+      "Studio",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Under Construction",
+    "status": "Under Construction",
+    "description": "The Erin Heights is a DMCI Homes property in Quezon City, offering Studio, 2BR, 3BR options with a listed price range of PHP 4,930,000 - PHP 30,140,000.",
+    "features": [
+      "Quezon City location",
+      "Under Construction property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Erin_Heights_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Erin_Heights_1.jpg",
+      "assets/images/properties/The_Erin_Heights_2.jpg",
+      "assets/images/properties/The_Erin_Heights_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Under Construction",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Erin Heights.",
+    "source_url": "https://www.dmcihomes.com/the-erin-heights",
+    "selling_status": "Preselling",
+    "is_preselling": true,
+    "is_rfo": false,
+    "turnover_date": "Under Construction",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-manors-at-celebrity-place",
+    "name": "The Manors at Celebrity Place",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 3,584,000 - PHP 16,445,000",
+    "price_min": 3584000,
+    "price_max": 16445000,
+    "unit_types": [
+      "Studio",
+      "2BR",
+      "3BR",
+      "4BR",
+      "H&L"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "The Manors at Celebrity Place is a DMCI Homes property in Quezon City, offering Studio, 2BR, 3BR, 4BR, H&L options with a listed price range of PHP 3,584,000 - PHP 16,445,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Gated community",
+      "Open spaces",
+      "Landscaped areas",
+      "Security",
+      "Community amenities"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Manors_at_Celebrity_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Manors_at_Celebrity_Place_1.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Manors at Celebrity Place.",
+    "source_url": "https://www.dmcihomes.com/the-manors-at-celebrity-place",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-orabella",
+    "name": "The Orabella",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 4,926,000 - PHP 10,564,000",
+    "price_min": 4926000,
+    "price_max": 10564000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "The Orabella is a DMCI Homes property in Quezon City, offering 1BR, 2BR, 3BR options with a listed price range of PHP 4,926,000 - PHP 10,564,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Orabella_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Orabella_1.jpg",
+      "assets/images/properties/The_Orabella_2.jpg",
+      "assets/images/properties/The_Orabella_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Orabella.",
+    "source_url": "https://www.dmcihomes.com/the-orabella",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-oriana",
+    "name": "The Oriana",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 4,678,000 - PHP 10,369,000",
+    "price_min": 4678000,
+    "price_max": 10369000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "The Oriana is a DMCI Homes property in Quezon City, offering Studio, 1BR, 2BR options with a listed price range of PHP 4,678,000 - PHP 10,369,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Oriana_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Oriana_1.jpg",
+      "assets/images/properties/The_Oriana_2.jpg",
+      "assets/images/properties/The_Oriana_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Oriana.",
+    "source_url": "https://www.dmcihomes.com/the-oriana",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-redwoods",
+    "name": "The Redwoods",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 4,663,000 - PHP 9,494,000",
+    "price_min": 4663000,
+    "price_max": 9494000,
+    "unit_types": [
+      "Studio",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "The Redwoods is a DMCI Homes property in Quezon City, offering Studio, 2BR, 3BR options with a listed price range of PHP 4,663,000 - PHP 9,494,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Redwoods_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Redwoods_1.jpg",
+      "assets/images/properties/The_Redwoods_2.jpg",
+      "assets/images/properties/The_Redwoods_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Redwoods.",
+    "source_url": "https://www.dmcihomes.com/the-redwoods",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "viera-residences",
+    "name": "Viera Residences",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 4,451,000 - PHP 9,982,000",
+    "price_min": 4451000,
+    "price_max": 9982000,
+    "unit_types": [
+      "1BR",
+      "2BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Viera Residences is a DMCI Homes property in Quezon City, offering 1BR, 2BR options with a listed price range of PHP 4,451,000 - PHP 9,982,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Viera_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Viera_Residences_1.jpg",
+      "assets/images/properties/Viera_Residences_2.jpg",
+      "assets/images/properties/Viera_Residences_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Viera Residences.",
+    "source_url": "https://www.dmcihomes.com/viera-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "zinnia-towers",
+    "name": "Zinnia Towers",
+    "location": "Quezon City",
+    "city": "Quezon City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Quezon City"
+    ],
+    "price_range": "PHP 4,031,000 - PHP 10,687,000",
+    "price_min": 4031000,
+    "price_max": 10687000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Zinnia Towers is a DMCI Homes property in Quezon City, offering Studio, 1BR, 2BR, 3BR options with a listed price range of PHP 4,031,000 - PHP 10,687,000.",
+    "features": [
+      "Quezon City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Zinnia_Towers_1.jpg",
+    "gallery": [
+      "assets/images/properties/Zinnia_Towers_1.jpg",
+      "assets/images/properties/Zinnia_Towers_2.jpg",
+      "assets/images/properties/Zinnia_Towers_3.jpg"
+    ],
+    "tags": [
+      "Quezon City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Zinnia Towers.",
+    "source_url": "https://www.dmcihomes.com/zinnia-towers",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "solmera-coast",
+    "name": "Solmera Coast",
+    "location": "San Juan, Batangas",
+    "city": "San Juan",
+    "category": [
+      "Luxury",
+      "Under Construction",
+      "San Juan"
+    ],
+    "price_range": "PHP 6,621,000 - PHP 20,004,000",
+    "price_min": 6621000,
+    "price_max": 20004000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR"
+    ],
+    "turnover": "Under Construction",
+    "status": "Under Construction",
+    "description": "Solmera Coast is a DMCI Homes property in San Juan, Batangas, offering Studio, 1BR, 2BR options with a listed price range of PHP 6,621,000 - PHP 20,004,000.",
+    "features": [
+      "San Juan, Batangas location",
+      "Under Construction property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Solmera_Coast_1.jpg",
+    "gallery": [
+      "assets/images/properties/Solmera_Coast_1.jpg",
+      "assets/images/properties/Solmera_Coast_2.jpg",
+      "assets/images/properties/Solmera_Coast_3.jpg"
+    ],
+    "tags": [
+      "San Juan",
+      "Under Construction",
+      "Luxury"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Solmera Coast.",
+    "source_url": "https://www.dmcihomes.com/solmera-coast",
+    "selling_status": "Preselling",
+    "is_preselling": true,
+    "is_rfo": false,
+    "turnover_date": "Under Construction",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "cedar-crest",
+    "name": "Cedar Crest",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 7,021,000 - PHP 12,044,000",
+    "price_min": 7021000,
+    "price_max": 12044000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Cedar Crest is a DMCI Homes property in Taguig, offering 2BR, 3BR options with a listed price range of PHP 7,021,000 - PHP 12,044,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Cedar_Crest_1.jpg",
+    "gallery": [
+      "assets/images/properties/Cedar_Crest_1.jpg",
+      "assets/images/properties/Cedar_Crest_2.jpg",
+      "assets/images/properties/Cedar_Crest_3.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Mid Range",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Cedar Crest.",
+    "source_url": "https://www.dmcihomes.com/cedar-crest",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "cypress-towers",
+    "name": "Cypress Towers",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 3,842,000 - PHP 8,797,000",
+    "price_min": 3842000,
+    "price_max": 8797000,
+    "unit_types": [
+      "Studio",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Cypress Towers is a DMCI Homes property in Taguig, offering Studio, 2BR, 3BR options with a listed price range of PHP 3,842,000 - PHP 8,797,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Cypress_Towers_1.jpg",
+    "gallery": [
+      "assets/images/properties/Cypress_Towers_1.jpg",
+      "assets/images/properties/Cypress_Towers_2.jpg",
+      "assets/images/properties/Cypress_Towers_3.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Affordable",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Cypress Towers.",
+    "source_url": "https://www.dmcihomes.com/cypress-towers",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "ivory-wood",
+    "name": "Ivory Wood",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 6,895,000 - PHP 10,330,000",
+    "price_min": 6895000,
+    "price_max": 10330000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Ivory Wood is a DMCI Homes property in Taguig, offering 2BR, 3BR options with a listed price range of PHP 6,895,000 - PHP 10,330,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Ivory_Wood_1.jpg",
+    "gallery": [
+      "assets/images/properties/Ivory_Wood_1.jpg",
+      "assets/images/properties/Ivory_Wood_2.jpg",
+      "assets/images/properties/Ivory_Wood_3.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Mid Range",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Ivory Wood.",
+    "source_url": "https://www.dmcihomes.com/ivory-wood",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "lakeview-manors",
+    "name": "Lakeview Manors",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 3,179,000 - PHP 10,130,000",
+    "price_min": 3179000,
+    "price_max": 10130000,
+    "unit_types": [
+      "2BR",
+      "4BR",
+      "H&L"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Lakeview Manors is a DMCI Homes property in Taguig, offering 2BR, 4BR, H&L options with a listed price range of PHP 3,179,000 - PHP 10,130,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Gated community",
+      "Open spaces",
+      "Landscaped areas",
+      "Security",
+      "Community amenities"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Lakeview_Manors_1.jpg",
+    "gallery": [
+      "assets/images/properties/Lakeview_Manors_1.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Affordable",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Lakeview Manors.",
+    "source_url": "https://www.dmcihomes.com/lakeview-manors",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "mahogany-place-iii",
+    "name": "Mahogany Place III",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Luxury",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 5,625,000 - PHP 61,256,000",
+    "price_min": 5625000,
+    "price_max": 61256000,
+    "unit_types": [
+      "H&L",
+      "Lot"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Mahogany Place III is a DMCI Homes property in Taguig, offering H&L, Lot options with a listed price range of PHP 5,625,000 - PHP 61,256,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Gated community",
+      "Open spaces",
+      "Landscaped areas",
+      "Security",
+      "Community amenities"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Mahogany_Place_III_1.jpg",
+    "gallery": [
+      "assets/images/properties/Mahogany_Place_III_1.jpg",
+      "assets/images/properties/Mahogany_Place_III_2.jpg",
+      "assets/images/properties/Mahogany_Place_III_3.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Luxury",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Mahogany Place III.",
+    "source_url": "https://www.dmcihomes.com/mahogany-place-iii",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "maple-place",
+    "name": "Maple Place",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 7,998,000 - PHP 11,770,000",
+    "price_min": 7998000,
+    "price_max": 11770000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Maple Place is a DMCI Homes property in Taguig, offering 2BR, 3BR options with a listed price range of PHP 7,998,000 - PHP 11,770,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Maple_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/Maple_Place_1.jpg",
+      "assets/images/properties/Maple_Place_2.jpg",
+      "assets/images/properties/Maple_Place_3.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Mid Range",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Maple Place.",
+    "source_url": "https://www.dmcihomes.com/maple-place",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "rainbow-ridge-condominiums",
+    "name": "Rainbow Ridge Condominiums",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 1,980,000 - PHP 4,607,000",
+    "price_min": 1980000,
+    "price_max": 4607000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Rainbow Ridge Condominiums is a DMCI Homes property in Taguig, offering Studio, 1BR, 2BR options with a listed price range of PHP 1,980,000 - PHP 4,607,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Rainbow_Ridge_Condominiums_1.jpg",
+    "gallery": [
+      "assets/images/properties/Rainbow_Ridge_Condominiums_1.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Affordable",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Rainbow Ridge Condominiums.",
+    "source_url": "https://www.dmcihomes.com/rainbow-ridge-condominiums",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "rosewood-pointe",
+    "name": "Rosewood Pointe",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 4,955,000 - PHP 11,045,000",
+    "price_min": 4955000,
+    "price_max": 11045000,
+    "unit_types": [
+      "Studio",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Rosewood Pointe is a DMCI Homes property in Taguig, offering Studio, 2BR, 3BR options with a listed price range of PHP 4,955,000 - PHP 11,045,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Rosewood_Pointe_1.jpg",
+    "gallery": [
+      "assets/images/properties/Rosewood_Pointe_1.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Affordable",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Rosewood Pointe.",
+    "source_url": "https://www.dmcihomes.com/rosewood-pointe",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "royal-palm-residences",
+    "name": "Royal Palm Residences",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 5,193,000 - PHP 13,431,000",
+    "price_min": 5193000,
+    "price_max": 13431000,
+    "unit_types": [
+      "Studio",
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Royal Palm Residences is a DMCI Homes property in Taguig, offering Studio, 1BR, 2BR, 3BR options with a listed price range of PHP 5,193,000 - PHP 13,431,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Royal_Palm_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Royal_Palm_Residences_1.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Mid Range",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Royal Palm Residences.",
+    "source_url": "https://www.dmcihomes.com/royal-palm-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "spring-lane-homes",
+    "name": "Spring Lane Homes",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 812,500 - PHP 3,676,000",
+    "price_min": 812500,
+    "price_max": 3676000,
+    "unit_types": [
+      "H&L",
+      "Lot"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Spring Lane Homes is a DMCI Homes property in Taguig, offering H&L, Lot options with a listed price range of PHP 812,500 - PHP 3,676,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Gated community",
+      "Open spaces",
+      "Landscaped areas",
+      "Security",
+      "Community amenities"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Spring_Lane_Homes_1.jpg",
+    "gallery": [
+      "assets/images/properties/Spring_Lane_Homes_1.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Affordable",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Spring Lane Homes.",
+    "source_url": "https://www.dmcihomes.com/spring-lane-homes",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "the-birchwood",
+    "name": "The Birchwood",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 8,118,000 - PHP 11,687,000",
+    "price_min": 8118000,
+    "price_max": 11687000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "The Birchwood is a DMCI Homes property in Taguig, offering 2BR, 3BR options with a listed price range of PHP 8,118,000 - PHP 11,687,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/The_Birchwood_1.jpg",
+    "gallery": [
+      "assets/images/properties/The_Birchwood_1.jpg",
+      "assets/images/properties/The_Birchwood_2.jpg",
+      "assets/images/properties/The_Birchwood_3.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Mid Range",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about The Birchwood.",
+    "source_url": "https://www.dmcihomes.com/the-birchwood",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "verawood-residences",
+    "name": "Verawood Residences",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Mid Range",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 7,992,000 - PHP 10,689,000",
+    "price_min": 7992000,
+    "price_max": 10689000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Verawood Residences is a DMCI Homes property in Taguig, offering 2BR, 3BR options with a listed price range of PHP 7,992,000 - PHP 10,689,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Verawood_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Verawood_Residences_1.jpg",
+      "assets/images/properties/Verawood_Residences_2.jpg",
+      "assets/images/properties/Verawood_Residences_3.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Mid Range",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Verawood Residences.",
+    "source_url": "https://www.dmcihomes.com/verawood-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "vista-de-lago",
+    "name": "Vista De Lago",
+    "location": "Taguig",
+    "city": "Taguig",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Taguig",
+      "Near BGC"
+    ],
+    "price_range": "PHP 4,195,000 - PHP 9,695,000",
+    "price_min": 4195000,
+    "price_max": 9695000,
+    "unit_types": [
+      "2BR",
+      "3BR",
+      "4BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Vista De Lago is a DMCI Homes property in Taguig, offering 2BR, 3BR, 4BR options with a listed price range of PHP 4,195,000 - PHP 9,695,000.",
+    "features": [
+      "Taguig location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "Accessible to major business districts"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Vista_De_Lago_1.jpg",
+    "gallery": [
+      "assets/images/properties/Vista_De_Lago_1.jpg"
+    ],
+    "tags": [
+      "Taguig",
+      "Ready for Occupancy",
+      "Affordable",
+      "Near BGC"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Vista De Lago.",
+    "source_url": "https://www.dmcihomes.com/vista-de-lago",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "woodland-hills",
+    "name": "Woodland Hills",
+    "location": "Carmona",
+    "city": "Carmona",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Carmona"
+    ],
+    "price_range": "PHP 634,200 - PHP 10,990,000",
+    "price_min": 634200,
+    "price_max": 10990000,
+    "unit_types": [
+      "H&L",
+      "Lot"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Woodland Hills is a DMCI Homes property in Carmona, offering H&L, Lot options with a listed price range of PHP 634,200 - PHP 10,990,000.",
+    "features": [
+      "Carmona location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options",
+      "House and lot / subdivision option"
+    ],
+    "amenities": [
+      "Gated community",
+      "Open spaces",
+      "Landscaped areas",
+      "Security",
+      "Community amenities"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Woodland_Hills_1.jpg",
+    "gallery": [
+      "assets/images/properties/Woodland_Hills_1.jpg"
+    ],
+    "tags": [
+      "Carmona",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Woodland Hills.",
+    "source_url": "https://www.dmcihomes.com/woodland-hills",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "verdon-parc",
+    "name": "Verdon Parc",
+    "location": "Davao City",
+    "city": "Davao City",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Davao City"
+    ],
+    "price_range": "PHP 4,182,000 - PHP 9,552,000",
+    "price_min": 4182000,
+    "price_max": 9552000,
+    "unit_types": [
+      "1BR",
+      "2BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Verdon Parc is a DMCI Homes property in Davao City, offering 1BR, 2BR options with a listed price range of PHP 4,182,000 - PHP 9,552,000.",
+    "features": [
+      "Davao City location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Verdon_Parc_1.jpg",
+    "gallery": [
+      "assets/images/properties/Verdon_Parc_1.jpg",
+      "assets/images/properties/Verdon_Parc_2.jpg",
+      "assets/images/properties/Verdon_Parc_3.jpg"
+    ],
+    "tags": [
+      "Davao City",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Verdon Parc.",
+    "source_url": "https://www.dmcihomes.com/verdon-parc",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "maricielo-villas",
+    "name": "Maricielo Villas",
+    "location": "Las Piñas",
+    "city": "Las Piñas",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Las Piñas"
+    ],
+    "price_range": "PHP 4,841,000 - PHP 7,817,000",
+    "price_min": 4841000,
+    "price_max": 7817000,
+    "unit_types": [
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Maricielo Villas is a DMCI Homes property in Las Piñas, offering 2BR, 3BR options with a listed price range of PHP 4,841,000 - PHP 7,817,000.",
+    "features": [
+      "Las Piñas location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Maricielo_Villas_1.jpg",
+    "gallery": [
+      "assets/images/properties/Maricielo_Villas_1.jpg",
+      "assets/images/properties/Maricielo_Villas_2.jpg",
+      "assets/images/properties/Maricielo_Villas_3.jpg"
+    ],
+    "tags": [
+      "Las Piñas",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Maricielo Villas.",
+    "source_url": "https://www.dmcihomes.com/maricielo-villas",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "ohana-place",
+    "name": "Ohana Place",
+    "location": "Las Piñas",
+    "city": "Las Piñas",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Las Piñas"
+    ],
+    "price_range": "PHP 3,013,000 - PHP 8,685,000",
+    "price_min": 3013000,
+    "price_max": 8685000,
+    "unit_types": [
+      "Studio",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Ohana Place is a DMCI Homes property in Las Piñas, offering Studio, 2BR, 3BR options with a listed price range of PHP 3,013,000 - PHP 8,685,000.",
+    "features": [
+      "Las Piñas location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Ohana_Place_1.jpg",
+    "gallery": [
+      "assets/images/properties/Ohana_Place_1.jpg",
+      "assets/images/properties/Ohana_Place_2.jpg",
+      "assets/images/properties/Ohana_Place_3.jpg"
+    ],
+    "tags": [
+      "Las Piñas",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Ohana Place.",
+    "source_url": "https://www.dmcihomes.com/ohana-place",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
+  },
+  {
+    "id": "sonora-garden-residences",
+    "name": "Sonora Garden Residences",
+    "location": "Las Piñas",
+    "city": "Las Piñas",
+    "category": [
+      "Affordable",
+      "Ready for Occupancy",
+      "Las Piñas"
+    ],
+    "price_range": "PHP 4,556,000 - PHP 11,208,000",
+    "price_min": 4556000,
+    "price_max": 11208000,
+    "unit_types": [
+      "1BR",
+      "2BR",
+      "3BR"
+    ],
+    "turnover": "Ready for Occupancy",
+    "status": "Ready for Occupancy",
+    "description": "Sonora Garden Residences is a DMCI Homes property in Las Piñas, offering 1BR, 2BR, 3BR options with a listed price range of PHP 4,556,000 - PHP 11,208,000.",
+    "features": [
+      "Las Piñas location",
+      "Ready for Occupancy property status",
+      "DMCI Homes development",
+      "Multiple unit options"
+    ],
+    "amenities": [
+      "Swimming pool",
+      "Fitness gym",
+      "Function rooms",
+      "Open spaces",
+      "Security"
+    ],
+    "payment_terms": "Flexible payment options available upon request",
+    "image": "assets/images/properties/Sonora_Garden_Residences_1.jpg",
+    "gallery": [
+      "assets/images/properties/Sonora_Garden_Residences_1.jpg",
+      "assets/images/properties/Sonora_Garden_Residences_2.jpg",
+      "assets/images/properties/Sonora_Garden_Residences_3.jpg"
+    ],
+    "tags": [
+      "Las Piñas",
+      "Ready for Occupancy",
+      "Affordable"
+    ],
+    "inquiry_message": "Hi Juan, I would like to inquire about Sonora Garden Residences.",
+    "source_url": "https://www.dmcihomes.com/sonora-garden-residences",
+    "selling_status": "RFO",
+    "is_preselling": false,
+    "is_rfo": true,
+    "turnover_date": "Ready for Occupancy",
+    "turnover_date_source": ""
   }
 ]

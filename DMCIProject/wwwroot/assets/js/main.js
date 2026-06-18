@@ -27,12 +27,73 @@
     let activeImageIndex = 0;
     let activeProgressGallery = [];
     let activeProgressImageIndex = 0;
-    let featuredExpanded = false;
+    let featuredVisibleCount = null;
+    let newsVisibleCount = null;
+    let progressVisibleCount = null;
+    let isFeaturedToggleLoading = false;
+    let isNewsToggleLoading = false;
+    let isProgressToggleLoading = false;
     let cardCarouselTimer = null;
+    let modalCarouselTimer = null;
+    let progressModalCarouselTimer = null;
     let inquiryConfigPromise = null;
 
     const $ = (selector) => document.querySelector(selector);
     const $$ = (selector) => Array.from(document.querySelectorAll(selector));
+
+    const modalScrollSelectors = [
+        ".modal-body",
+        ".modal-content",
+        ".modal-details",
+        ".modal-left",
+        ".modal-right",
+        ".modal-panel",
+        ".modal-gallery",
+        ".news-modal-panel",
+        ".news-modal-content",
+        ".progress-modal-panel",
+        ".progress-modal-media",
+        ".progress-modal-content",
+        "[data-modal-scroll]"
+    ].join(", ");
+
+    const resetModalScroll = (modal) => {
+        if (!modal) return;
+
+        const reset = () => {
+            [modal, ...modal.querySelectorAll(modalScrollSelectors)].forEach((element) => {
+                element.scrollTop = 0;
+                element.scrollLeft = 0;
+            });
+        };
+
+        reset();
+        window.requestAnimationFrame(() => {
+            reset();
+            window.requestAnimationFrame(reset);
+        });
+    };
+
+    const syncModalLock = () => {
+        document.body.classList.toggle("modal-lock", Boolean($(".modal.is-open")));
+    };
+
+    const showModal = (modal) => {
+        if (!modal) return;
+        resetModalScroll(modal);
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        syncModalLock();
+        resetModalScroll(modal);
+    };
+
+    const hideModal = (modal) => {
+        if (!modal) return;
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        resetModalScroll(modal);
+        syncModalLock();
+    };
 
     const getInitialLimit = () => {
         if (window.matchMedia("(max-width: 640px)").matches) return 1;
@@ -40,6 +101,8 @@
         if (window.matchMedia("(max-width: 1180px)").matches) return 3;
         return 4;
     };
+
+    const getShowMoreStep = () => getInitialLimit() * 2;
 
     const uniqueImages = (images = []) => [...new Set(images.filter(Boolean))];
 
@@ -92,10 +155,72 @@
     const renderTags = (tags = []) =>
         tags.map((tag) => `<span class="tag">${tag}</span>`).join("");
 
-    const compactStatus = (status = "") => {
-        if (!status) return "Available";
-        if (status.toLowerCase().includes("confirmation")) return "For confirmation";
-        return status;
+    const inferSellingStatus = (property) => {
+        const source = [
+            property.selling_status,
+            property.status,
+            property.turnover,
+            property.turnover_date,
+            ...(property.category || [])
+        ].filter(Boolean).join(" ").toLowerCase();
+
+        if (property.is_rfo || source.includes("ready for occupancy") || source.includes("rfo")) return "RFO";
+        if (property.is_preselling || source.includes("preselling") || source.includes("pre-selling") || source.includes("under construction") || source.includes("new")) return "Preselling";
+        return property.selling_status || property.status || "For confirmation";
+    };
+
+    const normalizeProperty = (property) => {
+        const sellingStatus = inferSellingStatus(property);
+        const turnoverDate = property.turnover_date || property.turnover || "For confirmation";
+
+        return {
+            ...property,
+            selling_status: sellingStatus,
+            is_rfo: Boolean(property.is_rfo || sellingStatus === "RFO"),
+            is_preselling: Boolean(property.is_preselling || sellingStatus === "Preselling"),
+            turnover_date: turnoverDate,
+            turnover_date_source: property.turnover_date_source || ""
+        };
+    };
+
+    const normalizeProperties = (items = []) => items.map(normalizeProperty);
+
+    const getTurnoverDate = (property) => property.turnover_date || property.turnover || "For confirmation";
+
+    const getSellingStatusClass = (property) => {
+        const status = inferSellingStatus(property).toLowerCase();
+        if (property.is_rfo || status === "rfo") return "is-rfo";
+        if (property.is_preselling || status === "preselling") return "is-preselling";
+        return "is-confirmation";
+    };
+
+    const hasProgressPercentage = (item) =>
+        item.progress_percentage !== null &&
+        item.progress_percentage !== undefined &&
+        item.progress_percentage !== "";
+
+    const getProgressDisplay = (item) =>
+        hasProgressPercentage(item)
+            ? (item.progress_display || `${item.progress_percentage}%`)
+            : "Not yet available";
+
+    const getProgressText = (item) =>
+        hasProgressPercentage(item)
+            ? `${getProgressDisplay(item)} Complete`
+            : "Not yet available";
+
+    const getProgressWidth = (item) =>
+        hasProgressPercentage(item) ? `${item.progress_percentage}%` : "0%";
+
+    const formatDisplayDate = (value) => {
+        if (!value || String(value).toLowerCase().includes("not")) return value || "Not yet available";
+        const date = new Date(`${value}T00:00:00`);
+        if (Number.isNaN(date.getTime())) return value;
+        return date.toLocaleDateString("en-US", {
+            month: "long",
+            day: "numeric",
+            year: "numeric"
+        });
     };
 
     const cardBadgeTags = (property) => {
@@ -129,7 +254,7 @@
         const badges = cardBadgeTags(property);
 
         return `
-        <article class="property-card observe-card" style="--stagger: ${Math.min(index, 9) * 70}ms">
+        <article class="property-card observe-card" style="--stagger: ${Math.min(index, 9) * 40}ms">
             <div class="card-media property-carousel" data-card-carousel="${property.id}" data-active-index="0" role="group" aria-label="${property.name} property image carousel">
                 <div class="property-carousel-track">
                     ${images.map((image, imageIndex) => `
@@ -147,11 +272,12 @@
                     </div>` : ""}
             </div>
             <div class="property-card-content">
+                <span class="selling-status-badge ${getSellingStatusClass(property)}">${inferSellingStatus(property)}</span>
                 <h3>${property.name}</h3>
                 <p class="location">${property.location}</p>
                 <p class="units">${property.unit_types.join(" &middot; ")}</p>
                 <p class="price">${property.price_range}</p>
-                <p class="card-status">${compactStatus(property.status)}</p>
+                <p class="turnover-info">Turnover: ${getTurnoverDate(property)}</p>
                 <button class="btn btn-primary" type="button" data-view="${property.id}">View Details</button>
             </div>
         </article>`;
@@ -209,14 +335,14 @@
 
         cardCarouselTimer = window.setInterval(() => {
             carousels.forEach((carousel) => {
-                if (!carousel.isConnected || carousel.matches(":hover")) return;
+                if (!carousel.isConnected || !carousel.matches(":hover")) return;
 
                 const lastManual = Number(carousel.dataset.lastManual || 0);
                 if (Date.now() - lastManual < 4500) return;
 
                 moveCardCarousel(carousel, 1);
             });
-        }, 1500);
+        }, 2500);
     };
 
     const handleCardCarouselClick = (button, direction) => {
@@ -262,8 +388,49 @@
         location: $("#location-filter")?.value || "All",
         price: $("#price-filter")?.value || "Any",
         unit: $("#unit-filter")?.value || "Any",
+        sellingStatus: $("#selling-status-filter")?.value || "All",
         sort: $("#sort-filter")?.value || "default"
     });
+
+    const populatePropertyFilters = () => {
+        const locationSelect = $("#location-filter");
+        const unitSelect = $("#unit-filter");
+
+        if (locationSelect) {
+            const locations = [...new Set(properties.map((property) => property.city).filter(Boolean))].sort();
+            locationSelect.innerHTML = [
+                "<option value=\"All\">All Locations</option>",
+                ...locations.map((location) => `<option value="${location}">${location}</option>`)
+            ].join("");
+        }
+
+        if (unitSelect) {
+            const units = [...new Set(properties.flatMap((property) => property.unit_types || []).filter(Boolean))].sort();
+            unitSelect.innerHTML = [
+                "<option value=\"Any\">Any Unit</option>",
+                ...units.map((unit) => `<option value="${unit}">${unit}</option>`)
+            ].join("");
+        }
+    };
+
+    const resetPropertyFilters = () => {
+        const search = $("#property-search");
+        const location = $("#location-filter");
+        const price = $("#price-filter");
+        const unit = $("#unit-filter");
+        const sellingStatus = $("#selling-status-filter");
+        const sort = $("#sort-filter");
+
+        if (search) search.value = "";
+        if (location) location.value = "All";
+        if (price) price.value = "Any";
+        if (unit) unit.value = "Any";
+        if (sellingStatus) sellingStatus.value = "All";
+        if (sort) sort.value = "default";
+
+        featuredVisibleCount = null;
+        renderFeaturedProperties();
+    };
 
     const matchesPrice = (property, priceFilter) => {
         if (priceFilter === "Any") return true;
@@ -271,6 +438,13 @@
         if (priceFilter === "5m-10m") return property.price_max >= 5000000 && property.price_min <= 10000000;
         if (priceFilter === "10m-20m") return property.price_max >= 10000000 && property.price_min <= 20000000;
         if (priceFilter === "20m-above") return property.price_max >= 20000000;
+        return true;
+    };
+
+    const matchesSellingStatus = (property, statusFilter) => {
+        if (statusFilter === "All") return true;
+        if (statusFilter === "RFO") return Boolean(property.is_rfo);
+        if (statusFilter === "Preselling") return Boolean(property.is_preselling);
         return true;
     };
 
@@ -287,8 +461,9 @@
             const matchesSearch = !filters.search || haystack.includes(filters.search);
             const matchesLocation = filters.location === "All" || property.city === filters.location;
             const matchesUnit = filters.unit === "Any" || property.unit_types.includes(filters.unit);
+            const matchesStatus = matchesSellingStatus(property, filters.sellingStatus);
 
-            return matchesSearch && matchesLocation && matchesUnit && matchesPrice(property, filters.price);
+            return matchesSearch && matchesLocation && matchesUnit && matchesStatus && matchesPrice(property, filters.price);
         });
 
         if (filters.sort === "price-asc") {
@@ -315,25 +490,141 @@
         return button;
     };
 
-    const renderFeaturedProperties = () => {
+    const renderPropertySkeletons = () => {
         const container = $("#featured-properties");
         if (!container) return;
 
+        const count = getInitialLimit();
+        const button = ensureShowMoreButton(container);
+        button.hidden = true;
+        container.classList.add("is-loading");
+        container.setAttribute("aria-busy", "true");
+        container.innerHTML = Array.from({ length: count }, (_, index) => `
+            <article class="property-card property-card-skeleton" aria-hidden="true" style="--stagger: ${index * 40}ms">
+                <div class="card-media skeleton-media"></div>
+                <div class="property-card-content">
+                    <span class="skeleton-line skeleton-badge"></span>
+                    <span class="skeleton-line skeleton-title"></span>
+                    <span class="skeleton-line"></span>
+                    <span class="skeleton-line short"></span>
+                    <span class="skeleton-line medium"></span>
+                    <span class="skeleton-button"></span>
+                </div>
+            </article>`).join("");
+    };
+
+    const renderProgressSkeletons = () => {
+        const container = $("#progress-grid");
+        if (!container) return;
+
+        const count = getInitialLimit();
+        const button = ensureProgressToggleButton(container);
+        button.hidden = true;
+        container.classList.add("is-loading");
+        container.setAttribute("aria-busy", "true");
+        container.innerHTML = Array.from({ length: count }, (_, index) => `
+            <article class="progress-card progress-card-skeleton" aria-hidden="true" style="--stagger: ${index * 40}ms">
+                <span class="skeleton-media"></span>
+                <div>
+                    <span class="skeleton-line skeleton-badge"></span>
+                    <span class="skeleton-line skeleton-title"></span>
+                    <span class="skeleton-line short"></span>
+                    <span class="skeleton-line medium"></span>
+                    <span class="skeleton-button"></span>
+                </div>
+            </article>`).join("");
+    };
+
+    const updateFeaturedToggleButton = (button, items, initialLimit, isLoading = false) => {
+        if (!button) return;
+
+        button.hidden = items.length <= initialLimit;
+        button.disabled = isLoading;
+        button.classList.toggle("is-loading", isLoading);
+        button.setAttribute("aria-busy", String(isLoading));
+        button.setAttribute("aria-expanded", String(featuredVisibleCount >= items.length));
+
+        if (isLoading) {
+            button.innerHTML = `<span class="button-spinner" aria-hidden="true"></span><span>Loading...</span>`;
+            return;
+        }
+
+        button.textContent = featuredVisibleCount >= items.length
+            ? "Show Less"
+            : `Show More (${items.length - featuredVisibleCount})`;
+    };
+
+    const ensureProgressToggleButton = (container) => {
+        let button = $("#progress-toggle");
+        if (!button) {
+            button = document.createElement("button");
+            button.id = "progress-toggle";
+            button.type = "button";
+            button.className = "show-more-btn";
+            button.dataset.progressToggle = "true";
+            container.insertAdjacentElement("afterend", button);
+        }
+        return button;
+    };
+
+    const updateProgressToggleButton = (button, items, initialLimit, isLoading = false) => {
+        if (!button) return;
+
+        button.hidden = items.length <= initialLimit;
+        button.disabled = isLoading;
+        button.classList.toggle("is-loading", isLoading);
+        button.setAttribute("aria-busy", String(isLoading));
+        button.setAttribute("aria-expanded", String(progressVisibleCount >= items.length));
+
+        if (isLoading) {
+            button.innerHTML = `<span class="button-spinner" aria-hidden="true"></span><span>Loading...</span>`;
+            return;
+        }
+
+        button.textContent = progressVisibleCount >= items.length
+            ? "Show Less"
+            : `Show More (${items.length - progressVisibleCount})`;
+    };
+
+    const renderFeaturedProperties = (options = {}) => {
+        const container = $("#featured-properties");
+        if (!container) return;
+        container.classList.remove("is-loading");
+        container.setAttribute("aria-busy", "false");
+
         const items = filteredProperties();
         const initialLimit = getInitialLimit();
-        const visible = featuredExpanded ? items : items.slice(0, initialLimit);
+        featuredVisibleCount = Math.min(
+            Math.max(featuredVisibleCount || initialLimit, initialLimit),
+            items.length
+        );
+
+        const visible = items.slice(0, featuredVisibleCount);
         const button = ensureShowMoreButton(container);
 
         if (visible.length === 0) {
-            container.innerHTML = `<p class="empty-state">No matching properties found. Try changing the filters.</p>`;
+            container.innerHTML = `
+                <p class="empty-state">
+                    <strong>No matching properties found.</strong>
+                    <span>Try clearing the filters or adjusting location, unit type, price, or selling status.</span>
+                </p>`;
             button.hidden = true;
             return;
         }
 
-        container.innerHTML = visible.map(propertyCardTemplate).join("");
-        button.hidden = items.length <= initialLimit;
-        button.textContent = featuredExpanded ? "Show Less" : `Show More (${items.length - initialLimit})`;
-        button.setAttribute("aria-expanded", String(featuredExpanded));
+        const appendFrom = Number(options.appendFrom || 0);
+        const shouldAppend = appendFrom > 0 && appendFrom < visible.length && container.children.length >= appendFrom;
+
+        if (shouldAppend) {
+            container.insertAdjacentHTML(
+                "beforeend",
+                visible.slice(appendFrom).map((property, index) => propertyCardTemplate(property, index)).join("")
+            );
+        } else {
+            container.innerHTML = visible.map(propertyCardTemplate).join("");
+        }
+
+        updateFeaturedToggleButton(button, items, initialLimit, false);
         observeCards();
         startCardCarousels();
     };
@@ -367,6 +658,27 @@
         });
     };
 
+    const stopModalCarousel = () => {
+        if (modalCarouselTimer) {
+            window.clearInterval(modalCarouselTimer);
+            modalCarouselTimer = null;
+        }
+    };
+
+    const startModalCarousel = () => {
+        stopModalCarousel();
+        if (activeGallery.length <= 1) return;
+
+        modalCarouselTimer = window.setInterval(() => {
+            if (!$("#property-modal")?.classList.contains("is-open")) {
+                stopModalCarousel();
+                return;
+            }
+
+            setImage(activeImageIndex + 1);
+        }, 2500);
+    };
+
     const renderListItems = (selector, values) => {
         const list = $(selector);
         if (!list) return;
@@ -377,16 +689,15 @@
         activeGallery = property.gallery?.length ? property.gallery : [property.image || fallbackImage];
         activeImageIndex = 0;
 
-        $("#modal-location").textContent = property.location;
-        $("#modal-title").textContent = property.name;
-        $("#modal-tags").innerHTML = renderTags(property.tags);
         $("#modal-gallery-title").textContent = property.name;
         $("#modal-gallery-location").textContent = property.location;
         $("#modal-gallery-tags").innerHTML = renderTags(property.tags);
         $("#modal-price").textContent = property.price_range;
         $("#modal-units").textContent = property.unit_types.join(", ");
-        $("#modal-turnover").textContent = property.turnover;
-        $("#modal-status").textContent = property.status;
+        $("#modal-turnover").textContent = getTurnoverDate(property);
+        $("#modal-status").textContent = inferSellingStatus(property);
+        $("#modal-turnover-source").textContent = property.turnover_date_source || "";
+        $("#modal-turnover-source").hidden = !property.turnover_date_source;
         $("#modal-description").textContent = property.description;
         $("#modal-payment").textContent = property.payment_terms || "Flexible payment options available upon request";
         $("#modal-inquire").href = createInquiryHref(property);
@@ -395,20 +706,25 @@
         renderListItems("#modal-features", property.features);
         renderListItems("#modal-amenities", property.amenities);
 
-        $("#thumbnail-row").innerHTML = activeGallery
-            .map((imagePath, index) => `<button class="thumb" type="button" data-thumb="${index}" aria-label="Show image ${index + 1}" title="${imagePath}"><img src="${imagePath}" alt="" onerror="this.onerror=null;this.src='${fallbackImage}'"></button>`)
-            .join("");
+        const thumbnailPlaceholders = Array.from({ length: Math.max(0, 4 - activeGallery.length) }, () =>
+            `<span class="thumb thumb-placeholder" aria-hidden="true"><span class="thumb-placeholder-icon"></span><span>No photo yet</span></span>`
+        );
+
+        $("#thumbnail-row").innerHTML = [
+            ...activeGallery.map((imagePath, index) => `<button class="thumb" type="button" data-thumb="${index}" aria-label="Show image ${index + 1}" title="${imagePath}"><img src="${imagePath}" alt="" onerror="this.onerror=null;this.src='${fallbackImage}'"></button>`),
+            ...thumbnailPlaceholders
+        ].join("");
 
         setImage(0);
-        $("#property-modal").classList.add("is-open");
-        $("#property-modal").setAttribute("aria-hidden", "false");
-        document.body.classList.add("modal-lock");
+        showModal($("#property-modal"));
+        startModalCarousel();
     };
 
     const closeModal = () => {
-        $("#property-modal")?.classList.remove("is-open");
-        $("#property-modal")?.setAttribute("aria-hidden", "true");
-        document.body.classList.remove("modal-lock");
+        stopModalCarousel();
+        hideModal($("#property-modal"));
+        activeGallery = [];
+        activeImageIndex = 0;
     };
 
     const openNewsModal = (item) => {
@@ -425,22 +741,18 @@
             image.alt = item.title;
         }
 
-        $("#news-modal-category").textContent = item.category;
-        $("#news-modal-date").textContent = item.date;
+        const newsCategory = $("#news-modal-category");
+        const newsDate = $("#news-modal-date");
+        if (newsCategory) newsCategory.textContent = item.category;
+        if (newsDate) newsDate.textContent = item.date;
         $("#news-modal-title").textContent = item.title;
         $("#news-modal-description").textContent = item.description;
 
-        modal.classList.add("is-open");
-        modal.setAttribute("aria-hidden", "false");
-        document.body.classList.add("modal-lock");
+        showModal(modal);
     };
 
     const closeNewsModal = () => {
-        $("#news-modal")?.classList.remove("is-open");
-        $("#news-modal")?.setAttribute("aria-hidden", "true");
-        if (!$("#property-modal")?.classList.contains("is-open")) {
-            document.body.classList.remove("modal-lock");
-        }
+        hideModal($("#news-modal"));
     };
 
     const findPropertyForProgress = (item) =>
@@ -465,6 +777,27 @@
         });
     };
 
+    const stopProgressModalCarousel = () => {
+        if (progressModalCarouselTimer) {
+            window.clearInterval(progressModalCarouselTimer);
+            progressModalCarouselTimer = null;
+        }
+    };
+
+    const startProgressModalCarousel = () => {
+        stopProgressModalCarousel();
+        if (activeProgressGallery.length <= 1) return;
+
+        progressModalCarouselTimer = window.setInterval(() => {
+            if (!$("#progress-modal")?.classList.contains("is-open")) {
+                stopProgressModalCarousel();
+                return;
+            }
+
+            setProgressImage(activeProgressImageIndex + 1);
+        }, 2500);
+    };
+
     const openProgressModal = (item) => {
         const modal = $("#progress-modal");
         if (!modal || !item) return;
@@ -478,17 +811,19 @@
         if (activeProgressGallery.length === 0) activeProgressGallery = [fallbackImage];
         activeProgressImageIndex = 0;
 
-        const percentText = `${item.progress_percentage}% Complete`;
+        const percentText = getProgressText(item);
         $("#progress-modal-percent").textContent = percentText;
-        $("#progress-modal-status").textContent = item.status;
-        $("#progress-modal-date").textContent = `Updated ${item.last_updated}`;
+        const progressStatus = $("#progress-modal-status");
+        const progressDate = $("#progress-modal-date");
+        if (progressStatus) progressStatus.textContent = item.status;
+        if (progressDate) progressDate.textContent = `Updated ${formatDisplayDate(item.last_updated)}`;
         $("#progress-modal-title").textContent = item.property_name;
         $("#progress-modal-location").textContent = item.location;
-        $("#progress-modal-bar").style.width = `${item.progress_percentage}%`;
+        $("#progress-modal-bar").style.width = getProgressWidth(item);
         $("#progress-modal-fact-progress").textContent = percentText;
         $("#progress-modal-price").textContent = property?.price_range || "For confirmation";
         $("#progress-modal-units").textContent = property?.unit_types?.join(" · ") || "For confirmation";
-        $("#progress-modal-turnover").textContent = property?.turnover || "For confirmation";
+        $("#progress-modal-turnover").textContent = property ? getTurnoverDate(property) : "For confirmation";
         $("#progress-modal-description").textContent = property?.description || `${item.property_name} is a featured DMCI Homes community. Ask for the latest confirmed construction details, availability, and viewing guidance.`;
 
         const highlights = property?.features?.length
@@ -500,87 +835,177 @@
             .join("");
         setProgressImage(0);
 
-        modal.classList.add("is-open");
-        modal.setAttribute("aria-hidden", "false");
-        document.body.classList.add("modal-lock");
+        showModal(modal);
+        startProgressModalCarousel();
     };
 
     const closeProgressModal = () => {
-        $("#progress-modal")?.classList.remove("is-open");
-        $("#progress-modal")?.setAttribute("aria-hidden", "true");
-        if (!$("#property-modal")?.classList.contains("is-open") && !$("#news-modal")?.classList.contains("is-open")) {
-            document.body.classList.remove("modal-lock");
-        }
+        stopProgressModalCarousel();
+        hideModal($("#progress-modal"));
+        activeProgressGallery = [];
+        activeProgressImageIndex = 0;
     };
 
     const openThankYouModal = () => {
         const modal = $("#thank-you-modal");
         if (!modal) return;
-        modal.classList.add("is-open");
-        modal.setAttribute("aria-hidden", "false");
-        document.body.classList.add("modal-lock");
+        showModal(modal);
     };
 
     const closeThankYouModal = () => {
-        $("#thank-you-modal")?.classList.remove("is-open");
-        $("#thank-you-modal")?.setAttribute("aria-hidden", "true");
-        if (
-            !$("#property-modal")?.classList.contains("is-open") &&
-            !$("#news-modal")?.classList.contains("is-open") &&
-            !$("#progress-modal")?.classList.contains("is-open")
-        ) {
-            document.body.classList.remove("modal-lock");
-        }
+        hideModal($("#thank-you-modal"));
     };
 
-    const renderNews = async () => {
+    const ensureNewsToggleButton = (container) => {
+        let button = $("#news-toggle");
+        if (!button) {
+            button = document.createElement("button");
+            button.id = "news-toggle";
+            button.type = "button";
+            button.className = "show-more-btn";
+            button.dataset.newsToggle = "true";
+            container.insertAdjacentElement("afterend", button);
+        }
+        return button;
+    };
+
+    const updateNewsToggleButton = (button, initialLimit, isLoading = false) => {
+        if (!button) return;
+
+        button.hidden = newsItems.length <= initialLimit;
+        button.disabled = isLoading;
+        button.classList.toggle("is-loading", isLoading);
+        button.setAttribute("aria-busy", String(isLoading));
+        button.setAttribute("aria-expanded", String(newsVisibleCount >= newsItems.length));
+
+        if (isLoading) {
+            button.innerHTML = `<span class="button-spinner" aria-hidden="true"></span><span>Loading...</span>`;
+            return;
+        }
+
+        button.textContent = newsVisibleCount >= newsItems.length
+            ? "Show Less"
+            : `Show More (${newsItems.length - newsVisibleCount})`;
+    };
+
+    const newsCardTemplate = (item, index) => `
+        <article class="news-card observe-card" style="--stagger: ${index * 40}ms">
+            <img src="${imageUrl(item)}" alt="${item.title}" loading="lazy" onerror="this.onerror=null;this.src='${fallbackImage}'">
+            <div>
+                <div class="card-meta">
+                    <span class="tag">${item.category}</span>
+                    <time>${item.date}</time>
+                </div>
+                <h3>${item.title}</h3>
+                <p>${item.description}</p>
+                <button class="btn btn-secondary" type="button" data-news="${item.id}">Read More</button>
+            </div>
+        </article>`;
+
+    const renderNews = async (options = {}) => {
         const container = $("#news-grid");
         if (!container) return;
 
         try {
-            newsItems = await loadJson("data/news.json", "news-data");
-            container.innerHTML = newsItems.map((item, index) => `
-                <article class="news-card observe-card" style="--stagger: ${index * 80}ms">
-                    <img src="${imageUrl(item)}" alt="${item.title}" loading="lazy" onerror="this.onerror=null;this.src='${fallbackImage}'">
-                    <div>
-                        <div class="card-meta">
-                            <span class="tag">${item.category}</span>
-                            <time>${item.date}</time>
-                        </div>
-                        <h3>${item.title}</h3>
-                        <p>${item.description}</p>
-                        <button class="btn btn-secondary" type="button" data-news="${item.id}">Read More</button>
-                    </div>
-                </article>`).join("");
+            if (newsItems.length === 0) {
+                newsItems = await loadJson("data/news.json", "news-data");
+            }
+
+            const initialLimit = getInitialLimit();
+            newsVisibleCount = Math.min(
+                Math.max(newsVisibleCount || initialLimit, initialLimit),
+                newsItems.length
+            );
+
+            const visible = newsItems.slice(0, newsVisibleCount);
+            const button = ensureNewsToggleButton(container);
+
+            if (visible.length === 0) {
+                container.innerHTML = `<p class="empty-state">Updates are currently unavailable.</p>`;
+                button.hidden = true;
+                return;
+            }
+
+            const appendFrom = Number(options.appendFrom || 0);
+            const shouldAppend = appendFrom > 0 && appendFrom < visible.length && container.children.length >= appendFrom;
+
+            if (shouldAppend) {
+                container.insertAdjacentHTML(
+                    "beforeend",
+                    visible.slice(appendFrom).map(newsCardTemplate).join("")
+                );
+            } else {
+                container.innerHTML = visible.map(newsCardTemplate).join("");
+            }
+
+            updateNewsToggleButton(button, initialLimit, false);
             observeCards();
         } catch (error) {
             console.error(error);
             container.innerHTML = `<p class="empty-state">Updates are currently unavailable.</p>`;
+            const button = $("#news-toggle");
+            if (button) button.hidden = true;
         }
     };
 
-    const renderProgress = async () => {
+    const progressCardTemplate = (item, index) => `
+        <article class="progress-card observe-card" style="--stagger: ${index * 40}ms">
+            <img src="${imageUrl(item)}" alt="${item.property_name}" loading="lazy" onerror="this.onerror=null;this.src='${fallbackImage}'">
+            <div>
+                <div class="card-meta">
+                    <span class="tag green">Construction Update</span>
+                            <time>${formatDisplayDate(item.last_updated)}</time>
+                </div>
+                <h3>${item.property_name}</h3>
+                <p>${item.location}</p>
+                <strong class="progress-value">${getProgressText(item)}</strong>
+                <div class="progress-track"><span style="width: ${getProgressWidth(item)}"></span></div>
+                <p>${item.status}</p>
+                <button class="btn btn-secondary" type="button" data-progress="${item.id}">View Progress</button>
+            </div>
+        </article>`;
+
+    const renderProgress = async (options = {}) => {
         const container = $("#progress-grid");
         if (!container) return;
 
         try {
-            progressItems = await loadJson("data/site-progress.json", "site-progress-data");
-            container.innerHTML = progressItems.map((item, index) => `
-                <article class="progress-card observe-card" style="--stagger: ${index * 80}ms">
-                    <img src="${imageUrl(item)}" alt="${item.property_name}" loading="lazy" onerror="this.onerror=null;this.src='${fallbackImage}'">
-                    <div>
-                        <div class="card-meta">
-                            <span class="tag green">Construction Update</span>
-                            <time>${item.last_updated}</time>
-                        </div>
-                        <h3>${item.property_name}</h3>
-                        <p>${item.location}</p>
-                        <strong class="progress-value">${item.progress_percentage}% Complete</strong>
-                        <div class="progress-track"><span style="width: ${item.progress_percentage}%"></span></div>
-                        <p>${item.status}</p>
-                        <button class="btn btn-secondary" type="button" data-progress="${item.id}">View Progress</button>
-                    </div>
-                </article>`).join("");
+            if (progressItems.length === 0) {
+                renderProgressSkeletons();
+                progressItems = await loadJson("data/site-progress.json", "site-progress-data");
+            }
+
+            container.classList.remove("is-loading");
+            container.setAttribute("aria-busy", "false");
+
+            const initialLimit = getInitialLimit();
+            progressVisibleCount = Math.min(
+                Math.max(progressVisibleCount || initialLimit, initialLimit),
+                progressItems.length
+            );
+
+            const visible = progressItems.slice(0, progressVisibleCount);
+            const button = ensureProgressToggleButton(container);
+
+            if (visible.length === 0) {
+                container.innerHTML = `<p class="empty-state">Progress updates are currently unavailable.</p>`;
+                button.hidden = true;
+                return;
+            }
+
+            const appendFrom = Number(options.appendFrom || 0);
+            const shouldAppend = appendFrom > 0 && appendFrom < visible.length && container.children.length >= appendFrom;
+
+            if (shouldAppend) {
+                container.insertAdjacentHTML(
+                    "beforeend",
+                    visible.slice(appendFrom).map((item, index) => progressCardTemplate(item, index)).join("")
+                );
+            } else {
+                container.innerHTML = visible.map(progressCardTemplate).join("");
+            }
+
+            updateProgressToggleButton(button, progressItems, initialLimit, false);
             observeCards();
         } catch (error) {
             console.error(error);
@@ -626,20 +1051,24 @@
             updateSectionNavigation();
         }, { passive: true });
 
-        ["#property-search", "#location-filter", "#price-filter", "#unit-filter", "#sort-filter"].forEach((selector) => {
+        ["#property-search", "#location-filter", "#price-filter", "#unit-filter", "#selling-status-filter", "#sort-filter"].forEach((selector) => {
             $(selector)?.addEventListener("input", () => {
-                featuredExpanded = false;
+                featuredVisibleCount = null;
                 renderFeaturedProperties();
             });
             $(selector)?.addEventListener("change", () => {
-                featuredExpanded = false;
+                featuredVisibleCount = null;
                 renderFeaturedProperties();
             });
         });
 
         window.addEventListener("resize", () => {
             window.clearTimeout(window.__propertyResizeTimer);
-            window.__propertyResizeTimer = window.setTimeout(renderFeaturedProperties, 180);
+            window.__propertyResizeTimer = window.setTimeout(() => {
+                renderFeaturedProperties();
+                renderNews();
+                renderProgress();
+            }, 180);
         });
 
         document.addEventListener("click", (event) => {
@@ -669,9 +1098,82 @@
 
             const featuredToggle = event.target.closest("[data-featured-toggle]");
             if (featuredToggle) {
-                featuredExpanded = !featuredExpanded;
-                renderFeaturedProperties();
+                if (isFeaturedToggleLoading) return;
+
+                const total = filteredProperties().length;
+                const initialLimit = getInitialLimit();
+
+                if ((featuredVisibleCount || initialLimit) >= total) {
+                    featuredVisibleCount = initialLimit;
+                    renderFeaturedProperties();
+                } else {
+                    const previousCount = featuredVisibleCount || initialLimit;
+                    const nextCount = Math.min(previousCount + getShowMoreStep(), total);
+                    const items = filteredProperties();
+
+                    isFeaturedToggleLoading = true;
+                    updateFeaturedToggleButton(featuredToggle, items, initialLimit, true);
+
+                    window.setTimeout(() => {
+                        featuredVisibleCount = nextCount;
+                        renderFeaturedProperties({ appendFrom: previousCount });
+                        isFeaturedToggleLoading = false;
+                    }, 120);
+                }
             }
+
+            const newsToggle = event.target.closest("[data-news-toggle]");
+            if (newsToggle) {
+                if (isNewsToggleLoading) return;
+
+                const total = newsItems.length;
+                const initialLimit = getInitialLimit();
+
+                if ((newsVisibleCount || initialLimit) >= total) {
+                    newsVisibleCount = initialLimit;
+                    renderNews();
+                } else {
+                    const previousCount = newsVisibleCount || initialLimit;
+                    const nextCount = Math.min(previousCount + getShowMoreStep(), total);
+
+                    isNewsToggleLoading = true;
+                    updateNewsToggleButton(newsToggle, initialLimit, true);
+
+                    window.setTimeout(() => {
+                        newsVisibleCount = nextCount;
+                        renderNews({ appendFrom: previousCount });
+                        isNewsToggleLoading = false;
+                    }, 120);
+                }
+            }
+
+            const progressToggle = event.target.closest("[data-progress-toggle]");
+            if (progressToggle) {
+                if (isProgressToggleLoading) return;
+
+                const total = progressItems.length;
+                const initialLimit = getInitialLimit();
+
+                if ((progressVisibleCount || initialLimit) >= total) {
+                    progressVisibleCount = initialLimit;
+                    renderProgress();
+                } else {
+                    const previousCount = progressVisibleCount || initialLimit;
+                    const nextCount = Math.min(previousCount + getShowMoreStep(), total);
+
+                    isProgressToggleLoading = true;
+                    updateProgressToggleButton(progressToggle, progressItems, initialLimit, true);
+
+                    window.setTimeout(() => {
+                        progressVisibleCount = nextCount;
+                        renderProgress({ appendFrom: previousCount });
+                        isProgressToggleLoading = false;
+                    }, 120);
+                }
+            }
+
+            const clearFilters = event.target.closest("#clear-property-filters");
+            if (clearFilters) resetPropertyFilters();
 
             const newsButton = event.target.closest("[data-news]");
             if (newsButton) {
@@ -686,7 +1188,9 @@
             }
         });
 
-        $(".modal-close")?.addEventListener("click", closeModal);
+        $$("#property-modal .modal-close, #property-modal .modal-close-action").forEach((button) => {
+            button.addEventListener("click", closeModal);
+        });
         $("#property-modal")?.addEventListener("click", (event) => {
             if (event.target.id === "property-modal") closeModal();
         });
@@ -710,8 +1214,6 @@
         });
         $("#property-modal .gallery-btn.prev")?.addEventListener("click", () => setImage(activeImageIndex - 1));
         $("#property-modal .gallery-btn.next")?.addEventListener("click", () => setImage(activeImageIndex + 1));
-        $(".progress-gallery-btn.prev")?.addEventListener("click", () => setProgressImage(activeProgressImageIndex - 1));
-        $(".progress-gallery-btn.next")?.addEventListener("click", () => setProgressImage(activeProgressImageIndex + 1));
 
         document.addEventListener("keydown", (event) => {
             const propertyOpen = $("#property-modal")?.classList.contains("is-open");
@@ -804,9 +1306,11 @@
 
     const init = async () => {
         bindEvents();
+        renderPropertySkeletons();
 
         try {
-            properties = await loadJson("data/properties.json", "properties-data");
+            properties = normalizeProperties(await loadJson("data/properties.json", "properties-data"));
+            populatePropertyFilters();
             renderFeaturedProperties();
             populateInterestedProperty();
             await Promise.all([renderNews(), renderProgress()]);
@@ -815,7 +1319,11 @@
         } catch (error) {
             console.error(error);
             const container = $("#featured-properties");
-            if (container) container.innerHTML = `<p class="empty-state">Property listings are temporarily unavailable.</p>`;
+            if (container) {
+                container.classList.remove("is-loading");
+                container.setAttribute("aria-busy", "false");
+                container.innerHTML = `<p class="empty-state"><strong>Property listings are temporarily unavailable.</strong><span>Please refresh the page or try again shortly.</span></p>`;
+            }
         }
     };
 
